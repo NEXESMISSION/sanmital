@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-globals */
 /**
  * Service Worker for image optimization and caching
  * 
