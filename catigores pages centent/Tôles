@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tôles - SOQUIBAT Group</title>
+    <!-- Inclure Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen p-8">
+    <div class="container mx-auto max-w-7xl">
+
+        <!-- Première boîte pour la description et le titre -->
+        <div class="bg-white shadow-lg p-8 md:p-12 mb-8">
+            <!-- Section d'introduction -->
+            <header class="text-left">
+                <!-- Navigation -->
+                <nav class="text-sm text-gray-500 mb-2">
+                    <a href="#" class="hover:underline">Accueil</a>
+                    <span class="mx-1">&gt;</span>
+                    <a href="#" class="hover:underline">Produits</a>
+                    <span class="mx-1">&gt;</span>
+                    <span>Tôles</span>
+                </nav>
+                <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">Tôles</h1>
+                <p class="text-lg md:text-xl text-gray-600 leading-relaxed">
+                    SOQUIBAT Group, spécialiste en commercialisation des produits métallurgiques, propose une large gamme de poutrelles aciers conçues. Dans un souci de vous garantir ce qu'il y a de mieux en matières de tôles, ces dernières sont soumises à plusieurs contrôles de qualités pour mieux satisfaire vos besoins. La qualité de la tôle est déterminée, en grande partie, par son épaisseur. Le contrôle est aussi effectué sur les caractéristiques mécaniques et de la composition de l'acier. Contrôle visuel de l'état de surface et contrôle de l'épaisseur. Pour la tôle, SOQUIBAT Group vous proposent un service innovant, sur-mesure, répondant l'ensemble de vos besoins et répondant à chacune de vos spécificités.
+                </p>
+            </header>
+        </div>
+
+        <!-- Deuxième boîte pour la liste des produits -->
+        <div class="bg-white shadow-lg p-8 md:p-12">
+            <!-- Titre de la section des produits -->
+            <h2 class="text-3xl font-bold text-gray-800 text-left mb-8">Tôles disponibles</h2>
+
+            <!-- Grille des produits -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Tôle laminée à chaud -->
+                <div class="bg-white shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/F2F2F2/000000?text=Tôle+laminée+à+chaud" alt="Image de tôle laminée à chaud" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Tôle laminée à chaud</h3>
+                    </div>
+                </div>
+
+                <!-- Tôle forte laminée à chaud -->
+                <div class="bg-white shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/F2F2F2/000000?text=Tôle+forte+laminée+à+chaud" alt="Image de tôle forte laminée à chaud" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Tôle forte laminée à chaud</h3>
+                    </div>
+                </div>
+
+                <!-- Tôle laminée striée à chaud -->
+                <div class="bg-white shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/F2F2F2/000000?text=Tôle+laminée+striée" alt="Image de tôle laminée striée" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Tôle laminée striée à chaud</h3>
+                    </div>
+                </div>
+
+                <!-- Tôle larmée laminée à chaud -->
+                <div class="bg-white shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/F2F2F2/000000?text=Tôle+larmée" alt="Image de tôle larmée" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Tôle larmée laminée à chaud</h3>
+                    </div>
+                </div>
+                
+                <!-- Tôle laminée à froid -->
+                <div class="bg-white shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/F2F2F2/000000?text=Tôle+laminée+à+froid" alt="Image de tôle laminée à froid" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Tôle laminée à froid</h3>
+                    </div>
+                </div>
+                
+                <!-- Tôle galvanisée -->
+                <div class="bg-white shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/F2F2F2/000000?text=Tôle+galvanisée" alt="Image de tôle galvanisée" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Tôle galvanisée</h3>
+                    </div>
+                </div>
+                
+                <!-- Tôle électro-zinguée -->
+                <div class="bg-white shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/F2F2F2/000000?text=Tôle+électro-zinguée" alt="Image de tôle électro-zinguée" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Tôle électro-zinguée</h3>
+                    </div>
+                </div>
+                
+                <!-- Tôle trouée -->
+                <div class="bg-white shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/F2F2F2/000000?text=Tôle+trouée" alt="Image de tôle trouée" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Tôle trouée</h3>
+                    </div>
+                </div>
+                
+                <!-- Tôle nervurée -->
+                <div class="bg-white shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/F2F2F2/000000?text=Tôle+nervurée" alt="Image de tôle nervurée" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Tôle nervurée</h3>
+                    </div>
+                </div>
+                
+                <!-- Tôle ondulée -->
+                <div class="bg-white shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/F2F2F2/000000?text=Tôle+ondulée" alt="Image de tôle ondulée" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Tôle ondulée</h3>
+                    </div>
+                </div>
+                
+                <!-- Tôle micro-nervurée -->
+                <div class="bg-white shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/F2F2F2/000000?text=Tôle+micro-nervurée" alt="Image de tôle micro-nervurée" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Tôle micro-nervurée</h3>
+                    </div>
+                </div>
+                
+                <!-- Tôle prélaquée -->
+                <div class="bg-white shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/F2F2F2/000000?text=Tôle+prélaquée" alt="Image de tôle prélaquée" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Tôle prélaquée</h3>
+                    </div>
+                </div>
+                
+                <!-- Tôle Toitesco -->
+                <div class="bg-white shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/F2F2F2/000000?text=Tôle+Toitesco" alt="Image de tôle Toitesco" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Tôle Toitesco</h3>
+                    </div>
+                </div>
+                
+                <!-- Tôle perforée -->
+                <div class="bg-white shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/F2F2F2/000000?text=Tôle+perforée" alt="Image de tôle perforée" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Tôle perforée</h3>
+                    </div>
+                </div>
+                
+                <!-- Métal déployé -->
+                <div class="bg-white shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/F2F2F2/000000?text=Métal+déployé" alt="Image de métal déployé" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Métal déployé</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

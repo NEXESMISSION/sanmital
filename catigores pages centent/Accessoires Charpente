@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessoires Charpente - SOQUIBAT Group</title>
+    <!-- Inclure Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen p-8">
+    <div class="container mx-auto max-w-7xl">
+
+        <!-- Première boîte pour la description et le titre -->
+        <div class="bg-white shadow-lg p-8 md:p-12 mb-8">
+            <!-- Section d'introduction -->
+            <header class="text-left">
+                <!-- Navigation -->
+                <nav class="text-sm text-gray-500 mb-2">
+                    <a href="#" class="hover:underline">Accueil</a>
+                    <span class="mx-1">&gt;</span>
+                    <a href="#" class="hover:underline">Produits</a>
+                    <span class="mx-1">&gt;</span>
+                    <span>Accessoires Charpente</span>
+                </nav>
+                <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">Accessoires Charpente</h1>
+                <p class="text-lg md:text-xl text-gray-600 leading-relaxed">
+                    SOQUIBAT propose une large gamme d'accessoires charpente. Pour toute demande spécifique merci de nous consulter, notre équipe de technico-commerciaux sera à votre disposition pour vous donner les meilleures solutions possibles.
+                </p>
+            </header>
+        </div>
+
+        <!-- Deuxième boîte pour la liste des produits -->
+        <div class="bg-white shadow-lg p-8 md:p-12">
+            <!-- Titre de la section des produits -->
+            <h2 class="text-3xl font-bold text-gray-800 text-left mb-8">Accessoires Charpente disponibles</h2>
+
+            <!-- Grille des produits -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Caillebotis -->
+                <div class="bg-white shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/F2F2F2/000000?text=Caillebotis" alt="Image de caillebotis" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Caillebotis</h3>
+                    </div>
+                </div>
+
+                <!-- Bavette -->
+                <div class="bg-white shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/F2F2F2/000000?text=Bavette" alt="Image d'une bavette" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Bavette</h3>
+                    </div>
+                </div>
+
+                <!-- Chéneaux -->
+                <div class="bg-white shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/F2F2F2/000000?text=Chéneaux" alt="Image de chéneaux" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Chéneaux</h3>
+                    </div>
+                </div>
+                
+                <!-- Faitière -->
+                <div class="bg-white shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/F2F2F2/000000?text=Faitière" alt="Image de faitière" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Faitière</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

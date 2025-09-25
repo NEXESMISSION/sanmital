@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ossature métallique - SOQUIBAT Group</title>
+    <!-- Inclure Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen p-8">
+    <div class="container mx-auto max-w-7xl">
+
+        <!-- Première boîte pour la description et le titre -->
+        <div class="bg-white shadow-lg p-8 md:p-12 mb-8">
+            <!-- Section d'introduction -->
+            <header class="text-left">
+                <!-- Navigation -->
+                <nav class="text-sm text-gray-500 mb-2">
+                    <a href="#" class="hover:underline">Accueil</a>
+                    <span class="mx-1">&gt;</span>
+                    <a href="#" class="hover:underline">Produits</a>
+                    <span class="mx-1">&gt;</span>
+                    <span>Ossature métallique</span>
+                </nav>
+                <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">Ossature métallique</h1>
+                <p class="text-lg md:text-xl text-gray-600 leading-relaxed">
+                    Ce matériau s'adapte facilement et offre une souplesse architecturale intéressante. L'acier présente également l'avantage de n'avoir à subir aucun traitement contre les agressions extérieures. Rapidement installée, l'ossature métallique octroie un gain de temps considérable dans les travaux de construction. Prédécoupée et assemblée en atelier selon les plans du maître d'ouvrage, la charpente métallique est montée, souvent à sec, sur le terrain.
+                </p>
+            </header>
+        </div>
+
+        <!-- Deuxième boîte pour la liste des produits -->
+        <div class="bg-white shadow-lg p-8 md:p-12">
+            <!-- Titre de la section des produits -->
+            <h2 class="text-3xl font-bold text-gray-800 text-left mb-8">Ossature métallique disponibles</h2>
+
+            <!-- Grille des produits -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Montant -->
+                <div class="bg-white shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/F2F2F2/000000?text=Montant" alt="Image d'un montant" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Montant</h3>
+                    </div>
+                </div>
+
+                <!-- Rail -->
+                <div class="bg-white shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/F2F2F2/000000?text=Rail" alt="Image d'un rail" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Rail</h3>
+                    </div>
+                </div>
+
+                <!-- Fourrure -->
+                <div class="bg-white shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/F2F2F2/000000?text=Fourrure" alt="Image d'une fourrure" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Fourrure</h3>
+                    </div>
+                </div>
+                
+                <!-- Cornière -->
+                <div class="bg-white shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/F2F2F2/000000?text=Cornière" alt="Image d'une cornière" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Cornière</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

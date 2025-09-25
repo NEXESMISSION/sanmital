@@ -1,0 +1,2 @@
+const products = require('C:\\Users\\saif\\Desktop\\digiplus\\clients\\sanmital\\src\\data\\products\\accessoires_charpente.js');
+           fs.writeFileSync('C:\Users\saif\Desktop\digiplus\clients\sanmital\temp_data.json', JSON.stringify(products.default || products, null, 2));

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fer marchands - SOQUIBAT Group</title>
+    <!-- Inclure Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen p-8">
+    <div class="container mx-auto max-w-7xl">
+
+        <!-- Première boîte pour la description et le titre -->
+        <div class="bg-white shadow-lg p-8 md:p-12 mb-8">
+            <!-- Section d'introduction -->
+            <header class="text-left">
+                <!-- Navigation -->
+                <nav class="text-sm text-gray-500 mb-2">
+                    <a href="#" class="hover:underline">Accueil</a>
+                    <span class="mx-1">&gt;</span>
+                    <a href="#" class="hover:underline">Produits</a>
+                    <span class="mx-1">&gt;</span>
+                    <span>Fer marchands</span>
+                </nav>
+                <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">Fer marchands</h1>
+                <p class="text-lg md:text-xl text-gray-600 leading-relaxed">
+                    SOQUIBAT propose une large gamme de fer marchands fabriquée par laminage à chaud, qui présente une bonne soudabilité et une aptitude à la déformation qui génère à son tour de bon matériaux pour des usages décoratifs. Idéal pour la forge ce produit est utilisé dans de nombreux domaines pour la réalisation des travaux en matière de bâtiment: Fabriqué par laminage à chaud, son acier est facile à mettre en forme.
+                </p>
+            </header>
+        </div>
+
+        <!-- Deuxième boîte pour la liste des produits -->
+        <div class="bg-white shadow-lg p-8 md:p-12">
+            <!-- Titre de la section des produits -->
+            <h2 class="text-3xl font-bold text-gray-800 text-left mb-8">Fer marchands disponibles</h2>
+
+            <!-- Grille des produits -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Cornière -->
+                <div class="bg-white shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/F2F2F2/000000?text=Cornière" alt="Image d'une cornière" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Cornière</h3>
+                    </div>
+                </div>
+
+                <!-- Fer Carré -->
+                <div class="bg-white shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/F2F2F2/000000?text=Fer+Carré" alt="Image d'un fer carré" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Fer Carré</h3>
+                    </div>
+                </div>
+
+                <!-- Fer Plat -->
+                <div class="bg-white shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/F2F2F2/000000?text=Fer+Plat" alt="Image d'un fer plat" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Fer Plat</h3>
+                    </div>
+                </div>
+
+                <!-- Fer Rond -->
+                <div class="bg-white shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/F2F2F2/000000?text=Fer+Rond" alt="Image d'un fer rond" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Fer Rond</h3>
+                    </div>
+                </div>
+
+                <!-- Fer T -->
+                <div class="bg-white shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/F2F2F2/000000?text=Fer+T" alt="Image d'un fer T" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Fer T</h3>
+                    </div>
+                </div>
+
+                <!-- Fer U -->
+                <div class="bg-white shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/F2F2F2/000000?text=Fer+U" alt="Image d'un fer U" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Fer U</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

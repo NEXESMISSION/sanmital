@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panneaux Sandwich & Portes Frigorifiques - SOQUIBAT Group</title>
+    <!-- Inclure Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen p-8">
+    <div class="container mx-auto max-w-7xl">
+
+        <!-- Première boîte pour la description et le titre -->
+        <div class="bg-white shadow-lg p-8 md:p-12 mb-8">
+            <!-- Section d'introduction -->
+            <header class="text-left">
+                <!-- Navigation -->
+                <nav class="text-sm text-gray-500 mb-2">
+                    <a href="#" class="hover:underline">Accueil</a>
+                    <span class="mx-1">&gt;</span>
+                    <a href="#" class="hover:underline">Produits</a>
+                    <span class="mx-1">&gt;</span>
+                    <span>Panneaux Sandwich & Portes Frigorifiques</span>
+                </nav>
+                <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">Panneaux Sandwich & Portes Frigorifiques</h1>
+                <p class="text-lg md:text-xl text-gray-600 leading-relaxed">
+                    SOQUIBAT Group propose une large gamme de panneaux sandwich TUNISCO qui offre la solution la plus pratique et la plus économique pour une longue durée. Les panneaux sandwich sont utilisés comme éléments de construction modernes, légers et robustes pour recouvrir les toits et les façades des bâtiments, pour créer des cloisons intérieures isolées ou des chambres froides. Les panneaux sandwich sont généralement utilisés dans les installations industrielles, les bâtiments commerciaux, les entrepôts frigorifiques, les bâtiments sociaux, les centrales électriques, l'agriculture et les bâtiments d'élevage. Les panneaux sandwich, vous protègent contre les facteurs externes en prenant place tout autour de votre bâtiment et sur le toit, sont produits en remplissant un matériau isolant épais et à faible densité entre deux surfaces métalliques minces à haute densité.
+                </p>
+            </header>
+        </div>
+
+        <!-- Deuxième boîte pour la liste des produits -->
+        <div class="bg-white shadow-lg p-8 md:p-12">
+            <!-- Titre de la section des produits -->
+            <h2 class="text-3xl font-bold text-gray-800 text-left mb-8">Panneaux Sandwich & Portes Frigorifiques disponibles</h2>
+
+            <!-- Grille des produits -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Panneaux de bardage fixation cachée -->
+                <div class="bg-white shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/F2F2F2/000000?text=Panneaux+de+bardage" alt="Image de panneaux de bardage" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Panneaux de bardage fixation cachée</h3>
+                    </div>
+                </div>
+
+                <!-- Panneaux de couverture -->
+                <div class="bg-white shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/F2F2F2/000000?text=Panneaux+de+couverture" alt="Image de panneaux de couverture" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Panneaux de couverture</h3>
+                    </div>
+                </div>
+
+                <!-- Panneaux froid de bardage -->
+                <div class="bg-white shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/F2F2F2/000000?text=Panneaux+froid" alt="Image de panneaux froid de bardage" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Panneaux froid de bardage</h3>
+                    </div>
+                </div>
+                
+                <!-- Porte va-et-vient PVV -->
+                <div class="bg-white shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/F2F2F2/000000?text=Porte+va-et-vient" alt="Image de porte va-et-vient" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">PORTE VA-ET-VIENT PVV</h3>
+                    </div>
+                </div>
+                
+                <!-- Porte pivotante-pop -->
+                <div class="bg-white shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/F2F2F2/000000?text=Porte+pivotante" alt="Image de porte pivotante" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">PORTE PIVOTANTE-POP</h3>
+                    </div>
+                </div>
+                
+                <!-- Porte de service - PSR -->
+                <div class="bg-white shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/F2F2F2/000000?text=Porte+de+service" alt="Image de porte de service" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">PORTE DE SERVICE - PSR</h3>
+                    </div>
+                </div>
+                
+                <!-- Porte coulissante - POC -->
+                <div class="bg-white shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/F2F2F2/000000?text=Porte+coulissante" alt="Image de porte coulissante" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">PORTE COULISSANTE – POC</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

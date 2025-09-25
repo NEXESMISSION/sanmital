@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Catalogue de Produits - Soquibat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .header {
+            background-color: #173b8e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .product-image {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+        .product-info {
+            padding: 15px;
+        }
+        .product-name {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        .product-count {
+            color: #777;
+            font-size: 14px;
+        }
+        .product-link {
+            display: inline-block;
+            margin-top: 10px;
+            background-color: #173b8e;
+            color: white;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .company-info {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Catalogue de Produits Métalliques</h1>
+        <h2>SOQUIBAT Group</h2>
+    </div>
+    
+    <div class="container">
+        <div class="company-info">
+            <h2>À propos de SOQUIBAT Group</h2>
+            <p><b>SOQUIBAT Group</b>, fondé depuis 1983, demeure le leader sur le marché dans la fabrication, la commercialisation et la transformation des produits métalliques. Le Groupe collabore étroitement avec ses clients et ses fournisseurs, avec lesquels il développe une relation personnalisée et à forte valeur ajoutée : compréhension des besoins, force de proposition et de conseil, réactivité, disponibilité, innovation, modernité, fiabilité.</p>
+        </div>
+        
+        <h2>Nos Catégories de Produits</h2>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('images/20230407094907.jpg');"></div>
+                <div class="product-info">
+                    <div class="product-name">Poutrelles</div>
+                    <div class="product-count">4 produits</div>
+                    <p>Poutrelles en acier pour la construction et le support structurel.</p>
+                    <a href="https://soquibat.tn/produits/Poutrelles" class="product-link">Voir les détails</a>
+                </div>
+            </div>
+            
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('images/20230323105421.jpg');"></div>
+                <div class="product-info">
+                    <div class="product-name">Tôles</div>
+                    <div class="product-count">15 produits</div>
+                    <p>Tôles métalliques disponibles en différentes épaisseurs et matériaux.</p>
+                    <a href="https://soquibat.tn/produits/Tôles" class="product-link">Voir les détails</a>
+                </div>
+            </div>
+            
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('images/20230329084039.jpg');"></div>
+                <div class="product-info">
+                    <div class="product-name">Tubes soudés en acier</div>
+                    <div class="product-count">6 produits</div>
+                    <p>Tubes en acier soudés pour diverses applications industrielles et de construction.</p>
+                    <a href="https://soquibat.tn/produits/Tubes-soudés-en-acier" class="product-link">Voir les détails</a>
+                </div>
+            </div>
+            
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('images/20230323111853.JPG');"></div>
+                <div class="product-info">
+                    <div class="product-name">Panneaux Sandwich & Portes Frigorifiques</div>
+                    <div class="product-count">7 produits</div>
+                    <p>Panneaux sandwich et portes frigorifiques pour l'isolation et le stockage à froid.</p>
+                    <a href="https://soquibat.tn/produits/Panneaux-Sandwich-Portes-Frigorifiques" class="product-link">Voir les détails</a>
+                </div>
+            </div>
+            
+            <!-- Product 5 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('images/20230323113632.JPG');"></div>
+                <div class="product-info">
+                    <div class="product-name">Lames rideaux et accessoires portes</div>
+                    <div class="product-count">10 produits</div>
+                    <p>Lames pour rideaux métalliques et accessoires pour portes commerciales et industrielles.</p>
+                    <a href="https://soquibat.tn/produits/Lames-rideaux-et-accessoires-portes" class="product-link">Voir les détails</a>
+                </div>
+            </div>
+            
+            <!-- Product 6 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('images/20230330122123.png');"></div>
+                <div class="product-info">
+                    <div class="product-name">Pannes C et Z</div>
+                    <div class="product-count">2 produits</div>
+                    <p>Pannes en forme de C et Z utilisées dans les charpentes structurelles.</p>
+                    <a href="https://soquibat.tn/produits/Pannes-C-et-Z" class="product-link">Voir les détails</a>
+                </div>
+            </div>
+            
+            <!-- Product 7 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('images/20220904184154.jpeg');"></div>
+                <div class="product-info">
+                    <div class="product-name">Fer marchands</div>
+                    <div class="product-count">6 produits</div>
+                    <p>Produits en fer marchand pour la construction et l'usage industriel.</p>
+                    <a href="https://soquibat.tn/produits/Fer-marchands" class="product-link">Voir les détails</a>
+                </div>
+            </div>
+            
+            <!-- Product 8 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('images/20230407111431.png');"></div>
+                <div class="product-info">
+                    <div class="product-name">Accessoires Charpente</div>
+                    <div class="product-count">4 produits</div>
+                    <p>Accessoires pour charpente métallique et applications structurelles.</p>
+                    <a href="https://soquibat.tn/produits/Accessoires-Charpente" class="product-link">Voir les détails</a>
+                </div>
+            </div>
+            
+            <!-- Product 9 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('images/20230407110828.jpeg');"></div>
+                <div class="product-info">
+                    <div class="product-name">Aciers Spéciaux</div>
+                    <div class="product-count">3 produits</div>
+                    <p>Aciers spéciaux pour des applications industrielles spécifiques.</p>
+                    <a href="https://soquibat.tn/produits/Aciers-Spéciaux" class="product-link">Voir les détails</a>
+                </div>
+            </div>
+            
+            <!-- Product 10 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('images/20240919142327.png');"></div>
+                <div class="product-info">
+                    <div class="product-name">Ossature métallique</div>
+                    <div class="product-count">4 produits</div>
+                    <p>Ossature métallique pour installations de placoplâtre.</p>
+                    <a href="https://soquibat.tn/produits/Ossature%20métallique%20pour%20placoplâtre" class="product-link">Voir les détails</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer style="margin-top: 50px; text-align: center; padding: 20px; background-color: #173b8e; color: white;">
+        <p>Pour plus d'informations ou pour des fiches techniques détaillées, veuillez contacter SOQUIBAT Group</p>
+        <p>Téléphone: 98 184 250 | 58 512 629 | 98 184 245</p>
+        <p>Website: <a href="https://soquibat.tn/" style="color: white;">https://soquibat.tn/</a></p>
+    </footer>
+</body>
+</html>

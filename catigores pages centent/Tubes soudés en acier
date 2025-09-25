@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tubes soudés en acier - SOQUIBAT Group</title>
+    <!-- Inclure Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen p-8">
+    <div class="container mx-auto max-w-7xl">
+
+        <!-- Première boîte pour la description et le titre -->
+        <div class="bg-white shadow-lg p-8 md:p-12 mb-8">
+            <!-- Section d'introduction -->
+            <header class="text-left">
+                <!-- Navigation -->
+                <nav class="text-sm text-gray-500 mb-2">
+                    <a href="#" class="hover:underline">Accueil</a>
+                    <span class="mx-1">&gt;</span>
+                    <a href="#" class="hover:underline">Produits</a>
+                    <span class="mx-1">&gt;</span>
+                    <span>Tubes soudés en acier</span>
+                </nav>
+                <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">Tubes soudés en acier</h1>
+                <p class="text-lg md:text-xl text-gray-600 leading-relaxed">
+                    Les tubes soudés sont élaborés par formage et soudage en continu, sans apport de matière, d'un feuillard laminé à chaud, laminé à froid ou galvanisé. Norme> NF EN 10219 1 et 2. Nuances de l'acier> S 235, S 275, S 355. Acier selon NF EN 10025, apte a la galvanisation: courante, S235 JRH, S275 J0H, S355 J2H selon l'épaisseur. Certificat sur demande: 2.2 pour S235 et S275; 3.1B pour S355.
+                    Le G.S. est désignant Acier de construction. Le repère LRH sont désignant la limite d'élasticité. Valeur de la N/mm2. La limite d'élasticité peut être suivie d'une terminologie> JR > signifiant l'essai de résistance: JR=27 Joules à +20°C. JO= 27 Joules à +0°C. J2=27 Joules à -20°C K2=40 Joules à -20°C
+                    Longueur standards> 6m longueurs fixes et grandes longueurs sur demande. Epaisseurs> de 0.9 à 6mm pour le laminé à chaud; de 0.7 à 3mm pour le laminé à froid; de 0.8 à 3mm pour le galvanisé
+                </p>
+            </header>
+        </div>
+
+        <!-- Deuxième boîte pour la liste des produits -->
+        <div class="bg-white shadow-lg p-8 md:p-12">
+            <!-- Titre de la section des produits -->
+            <h2 class="text-3xl font-bold text-gray-800 text-left mb-8">Tubes soudés en acier disponibles</h2>
+
+            <!-- Grille des produits -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Tube carré -->
+                <div class="bg-white shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/F2F2F2/000000?text=Tube+carré" alt="Image de tube carré" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Tube carré</h3>
+                    </div>
+                </div>
+
+                <!-- Tube rond -->
+                <div class="bg-white shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/F2F2F2/000000?text=Tube+rond" alt="Image de tube rond" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Tube rond</h3>
+                    </div>
+                </div>
+
+                <!-- Tube rectangulaire -->
+                <div class="bg-white shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/F2F2F2/000000?text=Tube+rectangulaire" alt="Image de tube rectangulaire" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Tube rectangulaire</h3>
+                    </div>
+                </div>
+
+                <!-- Tube ovale -->
+                <div class="bg-white shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/F2F2F2/000000?text=Tube+ovale" alt="Image de tube ovale" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Tube ovale</h3>
+                    </div>
+                </div>
+                
+                <!-- Tube semi-ovale -->
+                <div class="bg-white shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/F2F2F2/000000?text=Tube+semi-ovale" alt="Image de tube semi-ovale" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Tube semi-ovale</h3>
+                    </div>
+                </div>
+                
+                <!-- Profilés spéciaux -->
+                <div class="bg-white shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/F2F2F2/000000?text=Profilés+spéciaux" alt="Image de profilés spéciaux" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Profilés spéciaux</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
