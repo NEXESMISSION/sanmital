@@ -8,6 +8,10 @@
  * 3. Provides offline access to previously viewed images
  */
 
+// This line is required by workbox
+// eslint-disable-next-line no-unused-vars
+const precacheManifest = self.__WB_MANIFEST;
+
 const CACHE_NAME = 'sanmital-image-cache-v1';
 
 // URLs that should be cached
