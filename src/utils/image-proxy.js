@@ -18,7 +18,7 @@ export function getProxiedImageUrl(url) {
 
   // List of domains that need proxying due to CORS restrictions
   const domainsThatNeedProxy = [
-    'soquibat.tn',
+    'sanmetal.com.tn',
     'samfi.tn'
   ];
 

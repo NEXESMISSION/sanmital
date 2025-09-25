@@ -11,7 +11,7 @@ const CACHE_NAME = 'sanmital-image-cache-v1';
 
 // URLs that should be cached
 const IMAGE_URLS = [
-  'soquibat.tn',
+  'sanmetal.com.tn',
   'samfi.tn',
   '.jpg',
   '.jpeg',

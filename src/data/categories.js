@@ -2,13 +2,13 @@ const categories = [
   {
     id: "poutrelles",
     title: "Poutrelles",
-    description: "SOQUIBAT Group, spécialiste en commercialisation des produits métallurgiques, propose une large gamme de poutrelles aciers conçues au fer carbone présentant un niveau minimal garanti de résistance à la traction.\n\nLa poutrelle acier, outre son excellente résistance, offre une mise en œuvre rapide, un encombrement réduit et une longévité exceptionnelle. Les poutrelles en acier sont utilisées dans des différents domaines pour la fabrication de sous-ensembles ou ensembles mécano-soudés.\nDans le bâtiment, elles sont couramment utilisées pour la fabrication de charpentes métalliques. Nous les retrouvons aussi comme outil de maintenance dans l'industrie lourde, éolienne et ferroviaire.",
+    description: "SAN METAL BY BEN AMOR, spécialiste en commercialisation des produits métallurgiques, propose une large gamme de poutrelles aciers conçues au fer carbone présentant un niveau minimal garanti de résistance à la traction.\n\nLa poutrelle acier, outre son excellente résistance, offre une mise en œuvre rapide, un encombrement réduit et une longévité exceptionnelle. Les poutrelles en acier sont utilisées dans des différents domaines pour la fabrication de sous-ensembles ou ensembles mécano-soudés.\nDans le bâtiment, elles sont couramment utilisées pour la fabrication de charpentes métalliques. Nous les retrouvons aussi comme outil de maintenance dans l'industrie lourde, éolienne et ferroviaire.",
     image: "/assets/images/products/poutrelles/category.jpg"
   },
   {
     id: "toles",
     title: "Tôles",
-    description: "SOQUIBAT Group, spécialiste en commercialisation des produits métallurgiques, propose une large gamme de poutrelles aciers conçues. Dans un souci de vous garantir ce qu'il y a de mieux en matières de tôles, ces dernières sont soumises à plusieurs contrôles de qualité et ce d'une manière continue. Ainsi, vous avez l'assurance d'une bonne qualité de produit, uniforme et constante. Le contrôle se fait essentiellement au niveau de l'épaisseur, des caractéristiques mécaniques et de la composition de l'acier. Contrôle visuel de l'état de surface et contrôle de l'épaisseur du zinc. Nos Spécialistes de la découpe vous proposent un service innovant, sur-mesure, façonnant l'ensemble de vos besoins et répondant à chacune de vos spécificités.",
+    description: "SAN METAL BY BEN AMOR, spécialiste en commercialisation des produits métallurgiques, propose une large gamme de poutrelles aciers conçues. Dans un souci de vous garantir ce qu'il y a de mieux en matières de tôles, ces dernières sont soumises à plusieurs contrôles de qualité et ce d'une manière continue. Ainsi, vous avez l'assurance d'une bonne qualité de produit, uniforme et constante. Le contrôle se fait essentiellement au niveau de l'épaisseur, des caractéristiques mécaniques et de la composition de l'acier. Contrôle visuel de l'état de surface et contrôle de l'épaisseur du zinc. Nos Spécialistes de la découpe vous proposent un service innovant, sur-mesure, façonnant l'ensemble de vos besoins et répondant à chacune de vos spécificités.",
     image: "/assets/images/products/toles/category.jpg"
   },
   {
@@ -20,19 +20,19 @@ const categories = [
   {
     id: "panneaux_sandwich",
     title: "Panneaux Sandwich & Portes Frigorifiques",
-    description: "SOQUIBAT Group propose une large gamme de panneaux sandwich TUNISCO qui offre la solution la plus pratique et la plus économique pour une longue durée. Les panneaux sandwich sont utilisés comme éléments de construction modernes, légers et robustes, pour recouvrir les toits et les façades des bâtiments, pour créer des cloisons intérieures isolées ou des chambres froides. Les panneaux sandwich sont généralement utilisés dans les installations industrielles, les bâtiments commerciaux, les entrepôts frigorifiques, les bâtiments sociaux, les centrales électriques, l'agriculture et les bâtiments d'élevage. Les panneaux sandwich, vous protègent contre les facteurs externes en prenant place tout autour de votre bâtiment et sur le toit, sont produits en remplissant un matériau isolant épais et à faible densité entre deux surfaces métalliques minces à haute densité.",
+    description: "SAN METAL BY BEN AMOR propose une large gamme de panneaux sandwich TUNISCO qui offre la solution la plus pratique et la plus économique pour une longue durée. Les panneaux sandwich sont utilisés comme éléments de construction modernes, légers et robustes, pour recouvrir les toits et les façades des bâtiments, pour créer des cloisons intérieures isolées ou des chambres froides. Les panneaux sandwich sont généralement utilisés dans les installations industrielles, les bâtiments commerciaux, les entrepôts frigorifiques, les bâtiments sociaux, les centrales électriques, l'agriculture et les bâtiments d'élevage. Les panneaux sandwich, vous protègent contre les facteurs externes en prenant place tout autour de votre bâtiment et sur le toit, sont produits en remplissant un matériau isolant épais et à faible densité entre deux surfaces métalliques minces à haute densité.",
     image: "/assets/images/products/panneaux_sandwich/category.jpg"
   },
   {
     id: "lames_rideaux",
     title: "Lames rideaux et accessoires portes",
-    description: "Retrouvez les meilleures lames rideaux en Tunisie. SOQUIBAT Group se spécialise dans les larmes rideaux. Lame rideaux type C et les accessoires de portes. Lame finale, perforée, rideau plane, bombée type C.",
+    description: "Retrouvez les meilleures lames rideaux en Tunisie. SAN METAL BY BEN AMOR se spécialise dans les larmes rideaux. Lame rideaux type C et les accessoires de portes. Lame finale, perforée, rideau plane, bombée type C.",
     image: "/assets/images/products/lames_rideaux/category.jpg"
   },
   {
     id: "pannes",
     title: "Pannes C et Z",
-    description: "SOQUIBAT, propose une large gamme de profilé panne Z et C, disponibles selon des dimensions et des épaisseurs variés. Pour toute demande spécifique merci de nous consulter, notre équipe de technico-commerciaux sera à votre disposition pour vous donner les meilleures solutions possibles.",
+    description: "SAN METAL BY BEN AMOR, propose une large gamme de profilé panne Z et C, disponibles selon des dimensions et des épaisseurs variés. Pour toute demande spécifique merci de nous consulter, notre équipe de technico-commerciaux sera à votre disposition pour vous donner les meilleures solutions possibles.",
     image: "/assets/images/products/pannes_c_z/category.jpg"
   },
   {
@@ -44,13 +44,13 @@ const categories = [
   {
     id: "accessoires_charpente",
     title: "Accessoires Charpente",
-    description: "SOQUIBAT, propose une large gamme d'accessoires charpente. Pour toute demande spécifique merci de nous consulter, notre équipe de technico-commerciaux sera à votre disposition pour vous donner les meilleures solutions possibles.",
+    description: "SAN METAL BY BEN AMOR, propose une large gamme d'accessoires charpente. Pour toute demande spécifique merci de nous consulter, notre équipe de technico-commerciaux sera à votre disposition pour vous donner les meilleures solutions possibles.",
     image: "/assets/images/products/accessoires_charpente/category.jpg"
   },
   {
     id: "aciers_speciaux",
     title: "Aciers Spéciaux",
-    description: "SOQUIBAT, spécialiste en commercialisation des produits métallurgiques, propose une large gamme d'aciers spéciaux. Pour toute demande spécifique merci de nous consulter, notre équipe de technico-commerciaux sera à votre disposition pour vous donner les meilleures solutions possibles.",
+    description: "SAN METAL BY BEN AMOR, spécialiste en commercialisation des produits métallurgiques, propose une large gamme d'aciers spéciaux. Pour toute demande spécifique merci de nous consulter, notre équipe de technico-commerciaux sera à votre disposition pour vous donner les meilleures solutions possibles.",
     image: "/assets/images/products/aciers_speciaux/category.jpg"
   },
   {

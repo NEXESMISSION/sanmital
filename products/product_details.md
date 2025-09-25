@@ -1,10 +1,10 @@
-# Soquibat Product Information
+# SAN METAL BY BEN AMOR Product Information
 
 ## Website Overview
-This is a saved version of the website soquibat.tn, which specializes in metallic products in Tunisia. The company SOQUIBAT Group was founded in 1983 and is a leader in the manufacturing, marketing, and transformation of metal products.
+This is a saved version of the website sanmetal.com.tn, which specializes in metallic products in Tunisia. The company SAN METAL BY BEN AMOR was founded in 1983 and is a leader in the manufacturing, marketing, and transformation of metal products.
 
 ## Company Description
-SOQUIBAT Group collaborates closely with its clients and suppliers to develop personalized relationships with added value: understanding needs, proposing solutions and advice, reactivity, availability, innovation, modernity, and reliability.
+SAN METAL BY BEN AMOR collaborates closely with its clients and suppliers to develop personalized relationships with added value: understanding needs, proposing solutions and advice, reactivity, availability, innovation, modernity, and reliability.
 
 ## Product Categories
 Below are the main product categories found on the website along with their associated images and links. Each category likely contains multiple individual products (the number in parentheses indicates how many).
