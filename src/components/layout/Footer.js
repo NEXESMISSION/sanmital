@@ -7,19 +7,20 @@ function Footer({ isAboutPage }) {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const products = [
-    "Poutrelles", "Tôles", "Tubes", "Cornières", 
-    "Charpente", "Fer marchands"
-  ];
+  // Products list removed
 
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="mb-4">
-              <span className="text-2xl font-bold text-white">SAN METAL</span>
+              <img 
+                src="https://i.ibb.co/RkLrLqXk/logod.png" 
+                alt="SAN METAL BY BEN AMOR Logo" 
+                className="h-16 w-auto bg-white p-2" 
+              />
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
               San Metal by Ben Amor est votre fournisseur de référence en aciers et métaux en Tunisie.
@@ -32,11 +33,11 @@ function Footer({ isAboutPage }) {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-red-600" />
-                <span className="text-gray-300">dir.commercial@sanmetal.com.tn</span>
+                <span className="text-gray-300">Contact@sanmetal.com.tn</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="h-5 w-5 text-red-600" />
-                <span className="text-gray-300">Route Mahdia Km 8 N11, Sfax - Tunisie</span>
+                <span className="text-gray-300">Route Mahdia Km 8, Sfax - Tunisie</span>
               </div>
             </div>
           </div>
@@ -74,17 +75,7 @@ function Footer({ isAboutPage }) {
             </ul>
           </div>
 
-          {/* Products */}
-          <div>
-            <h4 className="text-lg font-semibold text-white mb-4">Nos produits</h4>
-            <ul className="space-y-2">
-              {products.map((product, i) => (
-                <li key={i}>
-                  <span className="text-gray-300 text-sm">{product}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
+          {/* Products section removed */}
         </div>
 
         {/* Bottom Bar */}

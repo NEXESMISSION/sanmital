@@ -206,9 +206,9 @@ function ProductsSection() {
     panneaux_sandwich: require('../produits/Panneaux Sandwich & Portes Frigorifiques.jpg'),
     lames_rideaux: require('../produits/Lames rideaux et accessoires portes.webp'),
     pannes: require('../produits/Pannes C et Z.webp'),
-    fer_marchands: require('../produits/Fer marchands.jpg'),
+    fer_marchands: "https://i.ibb.co/23fS3VXp/3f90d4db-31f2-45c1-ae2b-6c2efb961057.jpg",
     accessoires_charpente: require('../produits/Accessoires Charpente.jpg'),
-    aciers_speciaux: require('../produits/Aciers Spéciaux.jpg'),
+    aciers_speciaux: "https://soquibat.tn/public/public/images/20230407110828.jpeg",
     ossature_metallique: require('../produits/Ossature métallique.webp')
   };
   
@@ -216,7 +216,7 @@ function ProductsSection() {
     { id: 'poutrelles', title: 'Poutrelles' },
     { id: 'toles', title: 'Tôles' },
     { id: 'tubes', title: 'Tubes soudés en acier' },
-    { id: 'panneaux_sandwich', title: 'Panneaux Sandwich & Portes Frigorifiques' },
+    { id: 'panneaux_sandwich', title: 'Panneaux Sandwich' },
     { id: 'lames_rideaux', title: 'Lames rideaux et accessoires portes' },
     { id: 'pannes', title: 'Pannes C et Z' },
     { id: 'fer_marchands', title: 'Fer marchands' },
@@ -351,19 +351,7 @@ function ProductsSection() {
             <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-6 tracking-tight">Besoin d'un devis ou d'informations ?</h2>
             <p className="text-lg md:text-xl text-white/90 mb-10">Découvrez notre gamme de produits métalliques de qualité ou contactez-nous pour obtenir un catalogue complet</p>
             
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Button 
-                className="bg-white text-black px-6 py-4 text-base md:text-lg shadow-lg border-2 border-gray-200 transition-colors duration-300 hover:bg-red-600 hover:text-white hover:border-red-500"
-                onClick={() => {
-                  const productsGrid = document.querySelector('.grid-cols-1.md\\:grid-cols-2.lg\\:grid-cols-3');
-                  if (productsGrid) {
-                    productsGrid.scrollIntoView({ behavior: 'smooth' });
-                  }
-                }}
-              >
-                <span className="font-bold">Découvrir nos produits</span>
-              </Button>
-              
+            <div className="flex justify-center">
               <Button 
                 className="bg-red-600 text-white px-6 py-4 text-base md:text-lg shadow-lg border-2 border-red-500 transition-colors duration-300 hover:bg-red-700 hover:border-white"
                 onClick={() => window.location.href = 'tel:+21697712721'}

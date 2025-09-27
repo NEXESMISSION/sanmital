@@ -1,8 +1,106 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from "./ui/button";
-import { Phone, Mail, MapPin, Clock, ExternalLink } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, ExternalLink, Check, AlertCircle } from "lucide-react";
+import { submitFormToGoogleSheet, validateFormData } from "../utils/formSubmission";
 
 export function Contact() {
+  // Form state
+  const [formData, setFormData] = useState({
+    name: "",
+    company: "",
+    email: "",
+    phone: "",
+    message: ""
+  });
+  
+  // Form submission state
+  const [formStatus, setFormStatus] = useState({
+    submitting: false,
+    submitted: false,
+    success: false,
+    message: ""
+  });
+  
+  // Form validation state
+  const [formErrors, setFormErrors] = useState({});
+  
+  // Handle input changes
+  const handleChange = (e) => {
+    const { id, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [id]: value
+    }));
+    
+    // Clear error when user starts typing
+    if (formErrors[id]) {
+      setFormErrors(prev => ({
+        ...prev,
+        [id]: ""
+      }));
+    }
+  };
+  
+  // Handle form submission
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    
+    // Validate form
+    const validation = validateFormData(formData);
+    if (!validation.isValid) {
+      setFormErrors(validation.errors);
+      return;
+    }
+    
+    // Set submitting state
+    setFormStatus({
+      submitting: true,
+      submitted: false,
+      success: false,
+      message: ""
+    });
+    
+    try {
+      // Submit form to Google Sheet
+      const result = await submitFormToGoogleSheet(formData, "contact_page");
+      
+      // Update form status
+      setFormStatus({
+        submitting: false,
+        submitted: true,
+        success: result.success,
+        message: result.message
+      });
+      
+      // Reset form if successful
+      if (result.success) {
+        setFormData({
+          name: "",
+          company: "",
+          email: "",
+          phone: "",
+          message: ""
+        });
+        
+        // Clear success message after 5 seconds
+        setTimeout(() => {
+          setFormStatus(prev => ({
+            ...prev,
+            submitted: false,
+            message: ""
+          }));
+        }, 5000);
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      setFormStatus({
+        submitting: false,
+        submitted: true,
+        success: false,
+        message: "Une erreur s'est produite. Veuillez réessayer."
+      });
+    }
+  };
   return (
     <section id="contact" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -62,9 +160,7 @@ export function Contact() {
                 <a href="mailto:contact@sanmetal.com.tn" className="block text-gray-700 hover:text-red-700 transition-colors">
                   contact@sanmetal.com.tn
                 </a>
-                <a href="mailto:dir.commercial@sanmetal.com.tn" className="block text-gray-700 hover:text-red-700 transition-colors">
-                  dir.commercial@sanmetal.com.tn
-                </a>
+                {/* Email removed */}
               </div>
             </div>
 
@@ -80,7 +176,7 @@ export function Contact() {
                 </div>
               </div>
               <div className="pl-16">
-                <p className="text-gray-700">Route Mahdia Km 8 N11</p>
+                <p className="text-gray-700">Route Mahdia Km 8</p>
                 <p className="text-gray-700">Sfax - Tunisie</p>
               </div>
             </div>
@@ -107,11 +203,11 @@ export function Contact() {
           <div className="bg-white shadow-lg overflow-hidden">
             <div className="p-6 border-b border-gray-200">
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Notre localisation</h3>
-              <p className="text-gray-600">Route Mahdia Km 8 N11, Sfax</p>
+              <p className="text-gray-600">Route Mahdia Km 8, Sfax</p>
             </div>
             <div className="aspect-[4/3]">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.123456789!2d10.7421875!3d34.7354167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1301d0f1c9b5e2a3%3A0x1234567890abcdef!2sRoute%20Mahdia%20Km%208%20N11%2C%20Sfax%2C%20Tunisia!5e0!3m2!1sen!2s!4v1234567890123!5m2!1sen!2s"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.123456789!2d10.7421875!3d34.7354167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1301d0f1c9b5e2a3%3A0x1234567890abcdef!2sRoute%20Mahdia%20Km%208%2C%20Sfax%2C%20Tunisia!5e0!3m2!1sen!2s!4v1234567890123!5m2!1sen!2s"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -138,15 +234,37 @@ export function Contact() {
         <div className="mt-12 mb-12">
           <div className="bg-white shadow-lg p-8">
             <h3 className="text-2xl font-bold mb-6 text-center text-gray-900">Envoyez-nous un message</h3>
-            <form className="space-y-6">
+            
+            {/* Form Success Message */}
+            {formStatus.submitted && formStatus.success && (
+              <div className="mb-6 bg-green-50 text-green-800 p-4 rounded-md flex items-center">
+                <Check className="h-5 w-5 mr-2 flex-shrink-0" />
+                <p>Votre message a été envoyé avec succès. Nous vous répondrons dans les plus brefs délais.</p>
+              </div>
+            )}
+            
+            {/* Form Error Message */}
+            {formStatus.submitted && !formStatus.success && (
+              <div className="mb-6 bg-red-50 text-red-800 p-4 rounded-md flex items-center">
+                <AlertCircle className="h-5 w-5 mr-2 flex-shrink-0" />
+                <p>Une erreur s'est produite lors de l'envoi du formulaire. Veuillez réessayer plus tard.</p>
+              </div>
+            )}
+            
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div className="space-y-2">
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700">Nom *</label>
                 <input 
                   id="name"
                   type="text"
                   placeholder="Votre nom complet"
-                  className="w-full px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
+                  className={`w-full px-4 py-2 border ${formErrors.name ? 'border-red-500' : 'border-gray-300'} focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent`}
+                  value={formData.name}
+                  onChange={handleChange}
                 />
+                {formErrors.name && (
+                  <p className="text-red-500 text-xs mt-1">{formErrors.name}</p>
+                )}
               </div>
 
               <div className="space-y-2">
@@ -156,6 +274,8 @@ export function Contact() {
                   type="text"
                   placeholder="Nom de votre entreprise"
                   className="w-full px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
+                  value={formData.company}
+                  onChange={handleChange}
                 />
               </div>
 
@@ -166,8 +286,13 @@ export function Contact() {
                     id="email"
                     type="email"
                     placeholder="votre@email.com"
-                    className="w-full px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
+                    className={`w-full px-4 py-2 border ${formErrors.email ? 'border-red-500' : 'border-gray-300'} focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent`}
+                    value={formData.email}
+                    onChange={handleChange}
                   />
+                  {formErrors.email && (
+                    <p className="text-red-500 text-xs mt-1">{formErrors.email}</p>
+                  )}
                 </div>
                 <div className="space-y-2">
                   <label htmlFor="phone" className="block text-sm font-medium text-gray-700">Téléphone *</label>
@@ -175,8 +300,13 @@ export function Contact() {
                     id="phone"
                     type="tel"
                     placeholder="+216 XX XXX XXX"
-                    className="w-full px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
+                    className={`w-full px-4 py-2 border ${formErrors.phone ? 'border-red-500' : 'border-gray-300'} focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent`}
+                    value={formData.phone}
+                    onChange={handleChange}
                   />
+                  {formErrors.phone && (
+                    <p className="text-red-500 text-xs mt-1">{formErrors.phone}</p>
+                  )}
                 </div>
               </div>
 
@@ -186,15 +316,30 @@ export function Contact() {
                   id="message"
                   rows={5}
                   placeholder="Détails de votre demande..."
-                  className="w-full px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
+                  className={`w-full px-4 py-2 border ${formErrors.message ? 'border-red-500' : 'border-gray-300'} focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent`}
+                  value={formData.message}
+                  onChange={handleChange}
                 ></textarea>
+                {formErrors.message && (
+                  <p className="text-red-500 text-xs mt-1">{formErrors.message}</p>
+                )}
               </div>
 
               <Button 
+                type="submit"
                 variant="primary"
                 className="w-full bg-red-600 hover:bg-red-700 text-white"
+                disabled={formStatus.submitting}
               >
-                Envoyer la demande
+                {formStatus.submitting ? (
+                  <span className="flex items-center justify-center">
+                    <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    Envoi en cours...
+                  </span>
+                ) : 'Envoyer la demande'}
               </Button>
 
               <p className="text-sm text-gray-500 text-center">
@@ -217,15 +362,7 @@ export function Contact() {
             <p className="mb-8 text-white/90 text-lg max-w-2xl mx-auto relative z-10">
               Pour les demandes urgentes, appelez-nous directement ou envoyez un email
             </p>
-            <div className="flex flex-col md:flex-row gap-6 justify-center relative z-10">
-              <Button 
-                className="bg-white text-black py-3 px-6 shadow-md flex items-center justify-center transition-all duration-300 hover:bg-gray-50 hover:shadow-lg hover:border-red-300 border-2 border-transparent"
-                onClick={() => window.location.href = 'tel:+21697712721'}
-              >
-                <Phone className="h-5 w-5 mr-2 text-red-700" />
-                <span className="font-bold">(+216) 97 712 721</span>
-              </Button>
-              
+            <div className="flex justify-center relative z-10">
               <Button 
                 className="bg-red-600 text-white py-3 px-6 shadow-md flex items-center justify-center transition-all duration-300 hover:bg-red-700 hover:shadow-lg border-2 border-transparent hover:border-white"
                 onClick={() => window.location.href = 'mailto:contact@sanmetal.com.tn'}

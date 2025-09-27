@@ -3,6 +3,7 @@ const poutrelles = [
     id: "poutrelle-hea",
     title: "Poutrelle HEA",
     image: "https://soquibat.tn/public/public/produits/20230317150700.JPG",  // Use direct URL
+    specImage: "Poutrelle HEA.png",
     description: "Poutrelle à larges ailes légères",
     longDescription: "Disponibles en qualité S 235 JRG (ST37) S275JRG2 et S 355J2G3 selon NF EN 10025 avec aptitude à la galvanisation. Disponibles en longueurs métriques de 6, 12, 10 et 15,10 mètres. Certificat 2.2 ou 3.1 B selon NF EN 10204.",
     category: "poutrelles",
@@ -18,6 +19,7 @@ const poutrelles = [
     id: "poutrelle-heb",
     title: "Poutrelle HEB",
     image: "https://soquibat.tn/public/public/produits/20230317150840.JPG",  // Use direct URL
+    specImage: "Poutrelle HEB.png",
     description: "Poutrelle à larges ailes à faces parallèles",
     longDescription: "Disponibles en qualité S 235 JRG (ST37) S275JRG2 et S 355J2G3 selon NF EN 10025 avec aptitude à la galvanisation. Disponibles en longueurs métriques de 6, 12, 10 et 15,10 mètres. Certificat 2.2 ou 3.1 B selon NF EN 10204.",
     category: "poutrelles",
@@ -33,6 +35,7 @@ const poutrelles = [
     id: "poutrelle-ipe",
     title: "Poutrelle IPE",
     image: "https://soquibat.tn/public/public/produits/20230317151041.JPG",  // Use direct URL
+    specImage: "Poutrelle IPE.png",
     description: "Poutrelle à ailes parallèles européenne",
     longDescription: "Disponibles en qualité S 235 JRG (ST37) S275JRG2 et S 355J2G3 selon NF EN 10025 avec aptitude à la galvanisation. Disponibles en longueurs métriques de 6, 12, 10 et 15,10 mètres. Certificat 2.2 ou 3.1 B selon NF EN 10204.",
     category: "poutrelles",
@@ -48,6 +51,7 @@ const poutrelles = [
     id: "poutrelle-upn",
     title: "Poutrelle UPN",
     image: "https://soquibat.tn/public/public/produits/20230317150737.JPG",  // Use direct URL
+    specImage: "Poutrelle UPN.png",
     description: "Profil en U normalisé européen",
     longDescription: "Disponibles en qualité S 235 JRG (ST37) S275JRG2 et S 355J2G3 selon NF EN 10025 avec aptitude à la galvanisation. Disponibles en longueurs métriques de 6, 12, 10 et 15,10 mètres. Certificat 2.2 ou 3.1 B selon NF EN 10204.",
     category: "poutrelles",

@@ -1,25 +1,30 @@
 {
   "short_name": "San Metal",
-  "name": "San Metal by Ben Amor",
+  "name": "San Metal by Ben Amor | Aciers & Métaux",
+  "description": "Fournisseur de référence en aciers et métaux en Tunisie depuis 35 ans",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "https://i.ibb.co/RkLrLqXk/logod.png",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "type": "image/png"
     },
     {
-      "src": "logo192.png",
+      "src": "https://i.ibb.co/RkLrLqXk/logod.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "https://i.ibb.co/RkLrLqXk/logod.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
   "start_url": ".",
+  "scope": "/",
   "display": "standalone",
+  "orientation": "portrait",
   "theme_color": "#b91c1c",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "lang": "fr-FR",
+  "dir": "ltr"
 }

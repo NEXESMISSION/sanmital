@@ -26,14 +26,14 @@ function Header({ isAboutPage }) {
   return (
     <header className="fixed w-full z-50 bg-white shadow-lg top-0 left-0">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between py-4 lg:py-5">
+        <div className="flex items-center justify-between py-3 sm:py-4 lg:py-5">
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link to="/" className="block">
               <img 
                 src="https://i.ibb.co/RkLrLqXk/logod.png" 
                 alt="SAN METAL BY BEN AMOR Logo" 
-                className="h-14 md:h-16 w-auto"
+                className="h-16 sm:h-18 md:h-20 w-auto" /* Increased size for all breakpoints, especially mobile */
               />
             </Link>
           </div>

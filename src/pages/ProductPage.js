@@ -5,6 +5,7 @@ import { Card, CardContent } from '../components/ui/card';
 import { Button } from '../components/ui/button';
 import { getProduct, getProductsByCategory, getAllProducts } from '../data/products';
 import OptimizedImage from '../components/ui/OptimizedImage';
+import SpecImage from '../components/ui/SpecImage';
 
 function ProductPage() {
   const { productId } = useParams();
@@ -138,6 +139,19 @@ function ProductPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2">
+              {/* Specification Image */}
+              {product.specImage && (
+                <div className="mb-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">Spécificités Techniques</h3>
+                  <SpecImage
+                    imageName={product.specImage}
+                    alt={`Spécificités de ${product.title}`}
+                    className="w-full h-auto rounded-lg"
+                    width="100%"
+                    height="auto"
+                  />
+                </div>
+              )}
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Description détaillée</h2>
               <p className="text-gray-700 mb-6 text-lg">{product.longDescription}</p>
               
@@ -192,7 +206,7 @@ function ProductPage() {
                   <div>
                     <h4 className="font-semibold mb-2">Contact commercial</h4>
                     <p className="text-gray-600 mb-2">(+216) 74 830 899</p>
-                    <p className="text-gray-600">dir.commercial@sanmetal.com.tn</p>
+                    <p className="text-gray-600">Contact@sanmetal.com.tn</p>
                   </div>
                   
                   <div>
