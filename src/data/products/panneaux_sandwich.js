@@ -56,9 +56,7 @@ const panneauxSandwich = [
     image: "/assets/images/products/PANNEAUX SANDWICH EN LAINE DE ROCHE.jpg",
     specImage: "PANNEAUX SANDWICH EN LAINE DE ROCHE.png",
     description: "Panneaux sandwich avec isolation en laine de roche pour haute résistance au feu",
-    longDescription: `<div class="mt-6 mb-6 text-center">
-      <img src="/assets/images/Spécificités Techniques/PANNEAUX SANDWICH EN LAINE DE ROCHE.png" alt="Spécifications techniques des panneaux sandwich en laine de roche" class="mx-auto max-w-full" />
-    </div>`,
+    longDescription: "Les panneaux sandwich en laine de roche offrent une excellente résistance au feu et une isolation thermique et acoustique supérieure. Ils sont idéaux pour les bâtiments où la sécurité incendie est une priorité, comme les établissements recevant du public, les bâtiments industriels à risque ou les entrepôts de stockage sensible.",
     category: "panneaux_sandwich",
     specifications: [
       "Épaisseur: de 50 à 200mm",
