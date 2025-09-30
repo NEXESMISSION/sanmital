@@ -6,22 +6,25 @@
  * and they will be reflected throughout the application.
  */
 
-// Base path for product images
-const BASE_IMAGE_PATH = '/assets/images/products';
+// Base paths for images
+const BASE_PRODUCT_IMAGE_PATH = '/assets/images/products';
+const BASE_THUMBNAIL_IMAGE_PATH = '/assets/images/thumbnails';
+const BASE_SPEC_IMAGE_PATH = '/assets/images/Spécificités Techniques';
 
 // Generate path for category images
 export const getCategoryImagePath = (categoryId) => {
-  return `${BASE_IMAGE_PATH}/${categoryId}/category.jpg`;
+  return `${BASE_THUMBNAIL_IMAGE_PATH}/${categoryId}.jpg`;
 };
 
 // Generate path for product images
 export const getProductImagePath = (categoryId, productId) => {
-  return `${BASE_IMAGE_PATH}/${categoryId}/${productId}.jpg`;
+  return `${BASE_PRODUCT_IMAGE_PATH}/${productId}.jpg`;
 };
 
 // Generate path for product specification images
-export const getProductSpecImagePath = (categoryId, productId) => {
-  return `${BASE_IMAGE_PATH}/${categoryId}/${productId}-spec.jpg`;
+export const getProductSpecImagePath = (filename) => {
+  if (!filename) return null;
+  return `${BASE_SPEC_IMAGE_PATH}/${filename}`;
 };
 
 export default {

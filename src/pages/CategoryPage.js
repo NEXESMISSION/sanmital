@@ -60,7 +60,7 @@ function CategoryPage() {
   }
 
   return (
-    <div className="mt-[90px] bg-gray-100 min-h-screen">
+    <div className="mt-[120px] sm:mt-[130px] md:mt-[140px] lg:mt-[140px] bg-gray-100 min-h-screen">
       <div className="container mx-auto max-w-7xl px-4">
         {/* Première boîte pour la description et le titre */}
         <div className="bg-white shadow-lg p-8 md:p-12 mb-8 mt-8">

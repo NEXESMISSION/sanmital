@@ -55,7 +55,7 @@ function ProductPage() {
 
   if (loading) {
     return (
-      <div className="pt-24 pb-20 text-center">
+      <div className="pt-[120px] sm:pt-[130px] md:pt-[140px] lg:pt-[140px] pb-20 text-center">
         <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-red-600 mx-auto"></div>
         <p className="mt-4 text-gray-600">Chargement du produit...</p>
       </div>
@@ -64,7 +64,7 @@ function ProductPage() {
 
   if (!product) {
     return (
-      <div className="pt-24 pb-20 text-center">
+      <div className="pt-[120px] sm:pt-[130px] md:pt-[140px] lg:pt-[140px] pb-20 text-center">
         <h2 className="text-2xl font-bold text-gray-800">Produit non trouvé</h2>
         <p className="mt-4 text-gray-600">
           Nous n'avons pas trouvé le produit que vous recherchez.
@@ -79,7 +79,7 @@ function ProductPage() {
   }
 
   return (
-    <div className="pt-16">
+    <div className="pt-[120px] sm:pt-[130px] md:pt-[140px] lg:pt-[140px]">
       {/* Breadcrumb */}
       <div className="bg-gray-100 py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

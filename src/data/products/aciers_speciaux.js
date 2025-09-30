@@ -2,7 +2,7 @@ const aciersSpeciaux = [
   {
     id: "fer-rond-42cd4",
     title: "Fer rond Acier 42 CD4",
-    image: "https://soquibat.tn/public/public/produits/IMG_0062-450x300.jpeg",
+    image: "/assets/images/products/Fer rond Acier 42 CD4.jpg",
     specImage: null,
     description: "Acier de traitement thermique pour pièces mécaniques résistantes",
     longDescription: "SAN METAL BY BEN AMOR, vous propose une large gamme de Fer rond acier 42 CD4.",
@@ -18,7 +18,7 @@ const aciersSpeciaux = [
   {
     id: "fer-rond-acier-xc48",
     title: "Fer rond Acier XC48",
-    image: "https://soquibat.tn/public/public/produits/XC-48-1-450x300.jpeg",
+    image: "/assets/images/products/Fer rond Acier XC48.jpg",
     specImage: null,
     description: "Acier mi-dur pour pièces mécaniques courantes",
     longDescription: "(Pas de description visible)",
@@ -34,7 +34,7 @@ const aciersSpeciaux = [
   {
     id: "fer-rond-acier-etire",
     title: "Fer rond Acier étiré",
-    image: "https://soquibat.tn/public/public/produits/IMG_0069-450x300.jpeg",
+    image: "/assets/images/products/Fer rond Acier étiré.jpg",
     specImage: null,
     description: "Acier calibré de précision pour pièces mécaniques",
     longDescription: "(Pas de description visible)",

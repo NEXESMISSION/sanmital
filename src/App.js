@@ -14,7 +14,7 @@ function App() {
         <Route path="about" element={<AboutPage />} />
         <Route path="category/:categoryId" element={<CategoryPage />} />
         <Route path="products/:productId" element={<ProductPage />} />
-        <Route path="*" element={<div className="py-20 text-center">Page not found</div>} />
+        <Route path="*" element={<div className="pt-[120px] sm:pt-[130px] md:pt-[140px] lg:pt-[140px] pb-20 text-center">Page not found</div>} />
       </Route>
     </Routes>
   );

@@ -2,8 +2,8 @@ const tubes = [
   {
     id: "profiles-speciaux",
     title: "Profilés spéciaux",
-    image: "https://soquibat.tn/public/public/produits/20230328112921.png",
-    specImage: "Tube rail.png",
+    image: "/assets/images/products/Profilés spéciaux.png",
+    specImage: "Tubes Profilés spéciaux.png",
     description: "Tubes et profilés de sections spéciales pour besoins spécifiques",
     longDescription: "Notre gamme de profilés spéciaux comprend diverses sections non standards répondant à des besoins techniques ou esthétiques particuliers. Ces produits sont utilisés dans des applications nécessitant des caractéristiques mécaniques spécifiques ou un design unique, comme l'industrie automobile, le mobilier design ou les structures architecturales.",
     category: "tubes",
@@ -18,7 +18,7 @@ const tubes = [
   {
     id: "tube-carre",
     title: "Tube carré",
-    image: "https://soquibat.tn/public/public/produits/20230328111331.png",
+    image: "/assets/images/products/Tube carré.png",
     specImage: "Tube carré.png",
     description: "Tubes en acier de section carrée pour structures et constructions",
     longDescription: "Disponibles en différentes épaisseurs de 0.7mm à 8mm.",
@@ -34,7 +34,7 @@ const tubes = [
   {
     id: "tube-ovale",
     title: "Tube ovale",
-    image: "https://soquibat.tn/public/public/produits/20230328112226.png",
+    image: "/assets/images/products/Tube ovale.png",
     specImage: null,
     description: "Tubes en acier de section ovale pour applications spécifiques",
     longDescription: "SAN METAL BY BEN AMOR, vous propose une large gamme de tubes ovales.",
@@ -50,7 +50,7 @@ const tubes = [
   {
     id: "tube-rectangulaire",
     title: "Tube rectangulaire",
-    image: "https://soquibat.tn/public/public/produits/20230328111801.png",
+    image: "/assets/images/products/Tube rectangulaire.png",
     specImage: "Tube rectangulaire.png",
     description: "Tubes en acier de section rectangulaire pour structures optimisées",
     longDescription: "Disponibles en différentes épaisseurs de 0.7mm à 6mm.",
@@ -66,7 +66,7 @@ const tubes = [
   {
     id: "tube-rond",
     title: "Tube rond",
-    image: "https://soquibat.tn/public/public/produits/20230328111439.png",
+    image: "/assets/images/products/Tube rond.png",
     specImage: "Tube rond.png",
     description: "Tubes en acier de section circulaire pour diverses applications",
     longDescription: "Disponibles en différentes épaisseurs de 0.7mm à 8mm.",
@@ -82,7 +82,7 @@ const tubes = [
   {
     id: "tube-semi-ovale",
     title: "Tube semi-ovale",
-    image: "https://soquibat.tn/public/public/produits/20230328112432.png",
+    image: "/assets/images/products/Tube semi-ovale.png",
     specImage: null,
     description: "Tubes en acier de section semi-ovale pour applications spécifiques",
     longDescription: "Disponibles en différentes épaisseurs de 0.7mm à 8mm.",

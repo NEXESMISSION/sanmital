@@ -2,7 +2,7 @@ const accessoiresCharpente = [
   {
     id: "bavette",
     title: "Bavette",
-    image: "https://soquibat.tn/public/public/produits/20230328132311.png",
+    image: "/assets/images/products/Bavette.png",
     description: "Profilé métallique d'étanchéité pour couvertures et bardages",
     longDescription: "SAN METAL BY BEN AMOR, vous propose une large gamme de bavettes.",
     category: "accessoires_charpente",
@@ -17,7 +17,7 @@ const accessoiresCharpente = [
   {
     id: "caillebotis",
     title: "Caillebotis",
-    image: "https://soquibat.tn/public/public/produits/20230323084013.png",
+    image: "/assets/images/products/Caillebotis.png",
     description: "Grilles métalliques pour planchers industriels et passerelles",
     longDescription: "Nos caillebotis sont soumis à plusieurs contrôles afin de garantir une bonne qualité uniforme et constante. Service sur-mesure.",
     category: "accessoires_charpente",
@@ -32,7 +32,7 @@ const accessoiresCharpente = [
   {
     id: "cheneaux",
     title: "Chéneaux",
-    image: "https://soquibat.tn/public/public/produits/20230328132408.png",
+    image: "/assets/images/products/Chéneaux.png",
     description: "Gouttières pour collecte et évacuation des eaux de pluie",
     longDescription: "SAN METAL BY BEN AMOR, vous propose une large gamme de chéneaux.",
     category: "accessoires_charpente",
@@ -47,7 +47,7 @@ const accessoiresCharpente = [
   {
     id: "faitiere",
     title: "Faîtière",
-    image: "https://soquibat.tn/public/public/produits/20230328132539.png",
+    image: "/assets/images/products/Faîtière.png",
     description: "Élément de jonction et d'étanchéité pour sommet de toiture",
     longDescription: "SAN METAL BY BEN AMOR, vous propose une large gamme de Faitière.",
     category: "accessoires_charpente",

@@ -6,7 +6,7 @@ import Contact from '../components/Contact';
 
 function AboutPage() {
   return (
-    <div className="mt-[90px]">
+    <div className="mt-[120px] sm:mt-[130px] md:mt-[140px] lg:mt-[140px]">
 
       {/* Main About Section */}
       <section id="about" className="py-20 bg-white">
@@ -39,18 +39,17 @@ function AboutPage() {
                 </h2>
                 
                 <p className="text-gray-600 mb-4 text-lg">
-                  <strong className="text-gray-900">San Metal by Ben Amor</strong>, fondée en 1990, est devenue une référence incontournable dans le secteur de la métallurgie en Tunisie avec 35 ans d'expertise.
+                  <strong className="text-gray-900">San Metal by Ben Amor</strong>, est devenue une référence incontournable dans le secteur de la métallurgie en Tunisie avec 35 ans de savoir-faire et d'expertise.
                 </p>
                 
                 <p className="text-gray-600 mb-4">
                   Notre entreprise se spécialise dans la fourniture et la distribution d'une large gamme de produits 
-                  métallurgiques de qualité supérieure, incluant poutrelles, tôles, tubes, cornières, 
-                  et bien d'autres produits essentiels pour vos projets de construction et d'industrie.
+                  métallurgiques de qualités supérieures, incluant poutrelles, tôles, tubes, cornières, 
+                  et bien d'autres produits essentiels pour vos projets de construction et de l'industrie.
                 </p>
                 
                 <p className="text-gray-600 mb-4">
-                  Nous proposons également des services de découpe, perçage et assistance technique 
-                  pour répondre aux besoins spécifiques de vos projets.
+                  En plus de la fourniture de nos poutrelles, nous proposons également des services de préfabrication à la demande de nos clients, en lui fournissant des multiples prestations et services conformément à ses exigences techniques et plans, entre autres, la découpe, le perçage, le poinçonnage, l'oxycoupage et l'assistance technique pour répondre aux besoins spécifiques de ses projets.
                 </p>
               </div>
 

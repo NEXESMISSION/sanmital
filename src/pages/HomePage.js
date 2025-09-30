@@ -10,10 +10,10 @@ import OptimizedImage from '../components/ui/OptimizedImage';
 function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0);
   
-  // Import hero section images
-  const heroImage1 = require('../hero section imges/1.webp');
-  const heroImage2 = require('../hero section imges/2.jpg');
-  const heroImage3 = require('../hero section imges/3.jpg');
+  // Hero section images from consolidated path
+  const heroImage1 = '/assets/images/hero/1.webp';
+  const heroImage2 = '/assets/images/hero/2.jpg';
+  const heroImage3 = '/assets/images/hero/3.jpg';
 
   const slides = [
     {
@@ -200,29 +200,33 @@ function ProductsSection() {
   
   // Import product images
   const productImages = {
-    poutrelles: require('../produits/Poutrelles.webp'),
-    toles: require('../produits/Tôles.jpg'),
-    tubes: require('../produits/Tubes soudés en acier.webp'),
-    panneaux_sandwich: require('../produits/Panneaux Sandwich & Portes Frigorifiques.jpg'),
-    lames_rideaux: require('../produits/Lames rideaux et accessoires portes.webp'),
-    pannes: require('../produits/Pannes C et Z.webp'),
-    fer_marchands: "https://i.ibb.co/23fS3VXp/3f90d4db-31f2-45c1-ae2b-6c2efb961057.jpg",
-    accessoires_charpente: require('../produits/Accessoires Charpente.jpg'),
-    aciers_speciaux: "https://soquibat.tn/public/public/images/20230407110828.jpeg",
-    ossature_metallique: require('../produits/Ossature métallique.webp')
+    poutrelles: "/assets/images/thumnailes/Poutrelles.webp",
+    toles: "/assets/images/thumnailes/Tôles.jpg",
+    tubes: "/assets/images/thumnailes/Tubes soudés en acier.webp",
+    tube_galvanise: "/assets/images/thumnailes/tube galvanisé.jpg",
+    panneaux_sandwich: "/assets/images/thumnailes/Panneaux Sandwich.jpg",
+    lames_rideaux: "/assets/images/thumnailes/Lames rideaux et accessoires portes.webp",
+    pannes: "/assets/images/thumnailes/Pannes C et Z.webp",
+    fer_marchands: "/assets/images/thumnailes/Fer marchands.jpg",
+    accessoires_charpente: "/assets/images/thumnailes/Accessoires Charpente.jpg",
+    aciers_speciaux: "/assets/images/thumnailes/Aciers Spéciaux.jpg",
+    ossature_metallique: "/assets/images/thumnailes/Ossature métallique.webp",
+    placo_platre: "/assets/images/thumnailes/Placo Plâtre.jpg"
   };
   
   const allCategories = [
     { id: 'poutrelles', title: 'Poutrelles' },
     { id: 'toles', title: 'Tôles' },
     { id: 'tubes', title: 'Tubes soudés en acier' },
+    { id: 'tube_galvanise', title: 'Tube galvanisé' },
     { id: 'panneaux_sandwich', title: 'Panneaux Sandwich' },
     { id: 'lames_rideaux', title: 'Lames rideaux et accessoires portes' },
     { id: 'pannes', title: 'Pannes C et Z' },
     { id: 'fer_marchands', title: 'Fer marchands' },
     { id: 'accessoires_charpente', title: 'Accessoires Charpente' },
     { id: 'aciers_speciaux', title: 'Aciers Spéciaux' },
-    { id: 'ossature_metallique', title: 'Ossature métallique' }
+    { id: 'ossature_metallique', title: 'Ossature métallique' },
+    { id: 'placo_platre', title: 'Placo Plâtre' }
   ];
 
   return (

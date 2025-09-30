@@ -2,8 +2,8 @@ const ferMarchands = [
   {
     id: "corniere",
     title: "Cornière",
-    image: "https://soquibat.tn/public/public/produits/20230328130713.png",
-    specImage: "Cornière.png",
+    image: "/assets/images/products/Cornière.png",
+    specImage: "Cornière Fer marchands.png",
     description: "Profilé en L pour assemblages et renforts structurels",
     longDescription: "SAN METAL BY BEN AMOR, vous propose une large gamme de profilés spéciaux.",
     category: "fer_marchands",
@@ -18,7 +18,7 @@ const ferMarchands = [
   {
     id: "fer-carre",
     title: "Fer Carré",
-    image: "https://soquibat.tn/public/public/produits/20220903182407.jpg",
+    image: "/assets/images/products/Fer Carré.jpg",
     specImage: "Fer Carré.png",
     description: "Barre à section carrée pour ferronnerie et constructions",
     longDescription: "SAN METAL BY BEN AMOR, vous propose une large gamme de profilés spéciaux.",
@@ -34,7 +34,7 @@ const ferMarchands = [
   {
     id: "fer-plat",
     title: "Fer Plat",
-    image: "https://soquibat.tn/public/public/produits/20230328131110.png",
+    image: "/assets/images/products/Fer Plat.png",
     specImage: "Fer Plat.png",
     description: "Barre plate polyvalente pour multiples applications métalliques",
     longDescription: "SAN METAL BY BEN AMOR, vous propose une large gamme de profilés spéciaux.",
@@ -50,7 +50,7 @@ const ferMarchands = [
   {
     id: "fer-rond",
     title: "Fer Rond",
-    image: "https://soquibat.tn/public/public/produits/20230328131225.png",
+    image: "/assets/images/products/Fer Rond.png",
     specImage: "Fer Rond.png",
     description: "Barre à section circulaire pour constructions et mécanismes",
     longDescription: "SAN METAL BY BEN AMOR, vous propose une large gamme de profilés spéciaux.",
@@ -66,7 +66,7 @@ const ferMarchands = [
   {
     id: "fer-t",
     title: "Fer T",
-    image: "https://soquibat.tn/public/public/produits/20230328131345.png",
+    image: "/assets/images/products/Fer T.png",
     specImage: "Fer T.png",
     description: "Profilé en forme de T pour renforts et supports",
     longDescription: "SAN METAL BY BEN AMOR, vous propose une large gamme de profilés spéciaux.",
@@ -82,8 +82,8 @@ const ferMarchands = [
   {
     id: "fer-u",
     title: "Fer U",
-    image: "https://soquibat.tn/public/public/produits/20230328131735.png",
-    specImage: "Fer marchands Cornière.png",
+    image: "/assets/images/products/Fer U.png",
+    specImage: null,
     description: "Profilé en forme de U pour charpentes et supports",
     longDescription: "SAN METAL BY BEN AMOR, vous propose une large gamme de profilés spéciaux.",
     category: "fer_marchands",

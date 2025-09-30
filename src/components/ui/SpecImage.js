@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { getProductSpecImagePath } from '../../utils/image-paths';
 
 /**
  * Component to dynamically import and display specification images
@@ -25,17 +26,22 @@ const SpecImage = ({
     // Get just the filename without path
     const filename = imageName.split('/').pop();
     
-    // Try to import the image dynamically
-    import(`../../imgess/${filename}`)
-      .then(image => {
-        setImageSrc(image.default);
-        setLoading(false);
-      })
-      .catch(err => {
-        console.error(`Failed to load image: ${filename}`, err);
-        setError(true);
-        setLoading(false);
-      });
+    // Set the image source using the utility function
+    const imagePath = getProductSpecImagePath(filename);
+    setImageSrc(imagePath);
+    setLoading(false);
+    
+    // Add an error handler for the image
+    const handleImageError = () => {
+      console.error(`Failed to load image: ${filename}`);
+      setError(true);
+    };
+    
+    // Create a test image to see if it loads
+    const img = new Image();
+    img.onload = () => setError(false);
+    img.onerror = handleImageError;
+    img.src = imagePath;
   }, [imageName]);
 
   if (loading) {

@@ -2,8 +2,8 @@ const ossatureMetallique = [
   {
     id: "corniere-ossature",
     title: "Cornière",
-    image: "https://soquibat.tn/public/public/produits/20240913102325.png",
-    specImage: "Cornière.png",
+    image: "/assets/images/products/Cornière Ossature_metallique.png",
+    specImage: "Cornière Ossature_metallique.png",
     description: "Profilé d'angle pour finitions et renforts",
     longDescription: "Les cornières d'ossature métallique sont des profilés en L utilisés pour les finitions d'angles, les jonctions entre plafonds et murs, et le renforcement des arêtes dans les systèmes de construction sèche. Elles assurent une finition soignée et renforcée des angles, facilitant la pose des enduits et peintures de finition.",
     category: "ossature_metallique",
@@ -18,7 +18,7 @@ const ossatureMetallique = [
   {
     id: "fourrure",
     title: "Fourrure",
-    image: "https://soquibat.tn/public/public/produits/20240913102050.png",
+    image: "/assets/images/products/Fourrure.png",
     specImage: "Fourrure.png",
     description: "Profilé pour plafonds suspendus et doublages",
     longDescription: "SAN METAL BY BEN AMOR, vous propose une large gamme de profilés spéciaux.",
@@ -34,7 +34,7 @@ const ossatureMetallique = [
   {
     id: "montant",
     title: "Montant",
-    image: "https://soquibat.tn/public/public/produits/20240913094213.png",
+    image: "/assets/images/products/Montant.png",
     specImage: "Montant.png",
     description: "Profilé vertical pour cloisons et doublages",
     longDescription: "Ossature métallique verticale en acier galvanisé, disposant d'une protection contre la corrosion conforme à la norme NF EN 14195. Profilé destiné à la réalisation de la structure portante des cloisons.",
@@ -50,7 +50,7 @@ const ossatureMetallique = [
   {
     id: "rail",
     title: "Rail",
-    image: "https://soquibat.tn/public/public/produits/20240913101923.png",
+    image: "/assets/images/products/Rail.png",
     specImage: "Rail.png",
     description: "Profilé horizontal pour guidage des montants",
     longDescription: "Ossature métallique verticale en acier galvanisé, disposant d'une protection contre la corrosion conforme à la norme NF EN 14195. Profilé en forme de « C » destiné à la réalisation de la structure portante des cloisons. Réaction au feu: Euroclasse A1 (non combustible).",

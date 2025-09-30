@@ -2,7 +2,7 @@ const pannes = [
   {
     id: "profile-panne-c",
     title: "Profilé Panne C",
-    image: "https://soquibat.tn/public/public/produits/20220903182635.jpg",
+    image: "/assets/images/products/Profilé Panne C.jpg",
     specImage: null,
     description: "Profilé métallique en forme de C pour charpentes légères",
     longDescription: "Ossature métallique verticale en acier galvanisé, disposant d'une protection contre la corrosion conforme à la norme NF EN 14195. Profilé en forme de « C » destiné à la réalisation de la structure portante des cloisons. Réaction au feu: Euroclasse A1 (non combustible).",
@@ -18,7 +18,7 @@ const pannes = [
   {
     id: "profile-panne-z",
     title: "Profilé Panne Z",
-    image: "https://soquibat.tn/public/public/produits/20230328135745.png",
+    image: "/assets/images/products/Profilé Panne Z.png",
     specImage: null,
     description: "Profilé métallique en forme de Z pour toitures et bardages",
     longDescription: "Ossature métallique en forme de Z en acier galvanisé, disposant d'une protection contre la corrosion conforme aux normes en vigueur. Profilé destiné à la réalisation de charpentes légères et structures pour toitures. Excellente stabilité dimensionnelle.",
