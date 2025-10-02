@@ -50,7 +50,7 @@ const tubes = [
   {
     id: "tube-rectangulaire",
     title: "Tube rectangulaire",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbuBnrtLz1rSdYb6EIZfJi2BARjBaAaQ3kSw&s",
+    image: "/assets/images/products/Tube rectangulaire.png",
     specImage: "Tube rectangulaire.png",
     description: "Tubes en acier de section rectangulaire pour structures optimisées",
     longDescription: "Disponibles en différentes épaisseurs de 0.7mm à 6mm.",
