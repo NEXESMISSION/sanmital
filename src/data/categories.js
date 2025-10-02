@@ -15,7 +15,7 @@ const categories = [
     id: "tubes",
     title: "Tubes soudés en acier",
     description: "Nos tubes soudés sont obtenus par un procédé de formage et de soudage continu, sans ajout de matière extérieure, assurant une excellente homogénéité. Disponibles en acier laminé à chaud, à froid ou galvanisé, ils respectent les normes NF EN 10219-1 et 2. Plusieurs nuances d'acier sont proposées (S235, S275, S355), adaptées aux traitements de galvanisation et aux différentes applications. Offerts en longueurs standards de 6 m ou sur demande, nos tubes couvrent une large plage d'épaisseurs selon le procédé de fabrication, garantissant polyvalence et fiabilité.",
-    image: "/assets/images/thumbnails/k64F1gJy/bee0a284-f5b0-4db5-9eda-f72c918467d0.jpg"
+    image: "/3.jpg"
   },
   {
     id: "tube_galvanise",
@@ -61,7 +61,7 @@ const categories = [
   },
   {
     id: "ossature_metallique",
-    title: "Ossature métallique",
+    title: "Profilés galvanisé pour placo platre",
     description: "L'ossature métallique proposée par SAN METAL BY BEN AMOR combine robustesse, flexibilité et rapidité de mise en œuvre. Préfabriquée en atelier selon les plans, elle se monte facilement sur site, réduisant considérablement les délais de construction. Résistante aux agressions extérieures, elle ne nécessite aucun traitement particulier et constitue un choix idéal pour des structures modernes et durables.",
     image: "/assets/images/thumbnails/ossature_metallique/category.jpg"
   },
@@ -82,12 +82,6 @@ const categories = [
     title: "Découpe Laser",
     description: "SAN METAL BY BEN AMOR met à votre disposition un service de découpe laser haute précision, capable de réaliser des formes complexes sur acier, inox et aluminium. Cette technologie assure des coupes nettes, des tolérances minimales et une finition impeccable. Nous proposons également des services complémentaires comme le pliage et l'usinage pour vous livrer des pièces prêtes à l'emploi.",
     image: "/assets/images/thumbnails/decoupe_laser/category.jpg"
-  },
-  {
-    id: "placo_platre",
-    title: "Placo Plâtre",
-    description: "SAN METAL BY BEN AMOR vous propose une gamme complète de plaques de plâtre adaptées à différents usages : standard pour les aménagements courants, hydrofuges pour les pièces humides, coupe-feu pour plus de sécurité et acoustiques pour une meilleure isolation phonique. Nous fournissons également tous les accessoires nécessaires (rails, montants, enduits, vis et bandes). Notre équipe est disponible pour vous conseiller dans le choix des solutions les mieux adaptées à votre projet.",
-    image: "/assets/images/thumbnails/dJt5nhw8/02c23232-ba22-4d40-9df2-c69418cc614d.jpg"
   }
 ];
 

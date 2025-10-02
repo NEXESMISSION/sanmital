@@ -62,6 +62,23 @@ const ossatureMetallique = [
       "Structure portante pour cloisons",
       "Installation professionnelle recommandée"
     ]
+  },
+  {
+    id: "profiles-galvanise-placo",
+    title: "Profilés galvanisé pour placo platre",
+    image: "/5.jpg",
+    specImage: null,
+    description: "Profilés galvanisés spécialement conçus pour les systèmes de placo plâtre",
+    longDescription: "Les profilés galvanisés pour placo plâtre offrent une solution complète pour la réalisation d'ossatures métalliques. Fabriqués en acier galvanisé de haute qualité, ils garantissent une excellente résistance à la corrosion et une durabilité optimale. Ces profilés sont idéaux pour la construction de cloisons, faux plafonds et doublages, offrant une structure solide et fiable pour vos projets de construction sèche.",
+    category: "ossature_metallique",
+    specifications: [
+      "Acier galvanisé haute qualité",
+      "Protection contre la corrosion conforme aux normes",
+      "Dimensions standardisées pour faciliter l'installation",
+      "Compatible avec tous les systèmes de placo plâtre",
+      "Réaction au feu: Euroclasse A1 (non combustible)",
+      "Installation facile et rapide"
+    ]
   }
 ];
 

@@ -12,7 +12,6 @@ import ossatureMetallique from './products/ossature_metallique';
 import inox from './products/inox';
 import aluminium from './products/aluminium';
 import decoupeLaser from './products/decoupe_laser';
-import placoPlatre from './products/placo_platre';
 
 // Combine all product categories
 const products = [
@@ -29,8 +28,7 @@ const products = [
   ...ossatureMetallique,
   ...inox,
   ...aluminium,
-  ...decoupeLaser,
-  ...placoPlatre
+  ...decoupeLaser
 ];
 
 // Get products by category
@@ -50,8 +48,7 @@ export const getProductsByCategory = (categoryId) => {
     'ossature_metallique': 'ossature_metallique',
     'inox': 'inox',
     'aluminium': 'aluminium',
-    'decoupe_laser': 'decoupe_laser',
-    'placo_platre': 'placo_platre'
+    'decoupe_laser': 'decoupe_laser'
   };
   
   const category = categoryMap[categoryId] || categoryId;

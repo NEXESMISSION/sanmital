@@ -47,7 +47,7 @@ function Header({ isAboutPage }) {
     { name: "Accueil", href: "/", isLink: true },
     { name: "À Propos", href: "/about", isLink: true },
     { name: "Produits", section: "products", isLink: false },
-    { name: "Services", section: "products", isLink: false },
+    { name: "Services", href: "/services", isLink: true },
     { name: "Contact", section: "contact", isLink: false },
     { name: "Demande de Partenariat", section: "contact", isLink: false },
   ];

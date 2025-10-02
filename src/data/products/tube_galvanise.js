@@ -19,7 +19,7 @@ const tubeGalvanise = [
   {
     id: "tube-rectangulaire-galva",
     title: "Tube rectangulaire",
-    image: "/assets/images/products/tube carree galva.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbuBnrtLz1rSdYb6EIZfJi2BARjBaAaQ3kSw&s",
     specImage: null,
     description: "Tubes en acier galvanisé de section rectangulaire pour structures optimisées",
     longDescription: "Disponibles en différentes épaisseurs de 0.7mm à 6mm, ces tubes rectangulaires galvanisés sont idéals pour les structures extérieures.",

@@ -202,7 +202,7 @@ function ProductsSection() {
   const productImages = {
     poutrelles: "/assets/images/thumnailes/Poutrelles.webp",
     toles: "/assets/images/thumnailes/Tôles.jpg",
-    tubes: "/assets/images/thumnailes/Tubes soudés en acier.webp",
+    tubes: "/3.jpg",
     tube_galvanise: "/assets/images/thumnailes/tube galvanisé.jpg",
     panneaux_sandwich: "/assets/images/thumnailes/Panneaux Sandwich.jpg",
     lames_rideaux: "/assets/images/thumnailes/Lames rideaux et accessoires portes.webp",
@@ -210,8 +210,7 @@ function ProductsSection() {
     fer_marchands: "/assets/images/thumnailes/Fer marchands.jpg",
     accessoires_charpente: "/assets/images/thumnailes/Accessoires Charpente.jpg",
     aciers_speciaux: "/assets/images/thumnailes/Aciers Spéciaux.jpg",
-    ossature_metallique: "/assets/images/thumnailes/Ossature métallique.webp",
-    placo_platre: "/assets/images/thumnailes/Placo Plâtre.jpg"
+    ossature_metallique: "/assets/images/thumnailes/Ossature métallique.webp"
   };
   
   const allCategories = [
@@ -225,8 +224,7 @@ function ProductsSection() {
     { id: 'fer_marchands', title: 'Fer marchands' },
     { id: 'accessoires_charpente', title: 'Accessoires Charpente' },
     { id: 'aciers_speciaux', title: 'Aciers Spéciaux' },
-    { id: 'ossature_metallique', title: 'Ossature métallique' },
-    { id: 'placo_platre', title: 'Placo Plâtre' }
+    { id: 'ossature_metallique', title: 'Profilés galvanisé pour placo platre' }
   ];
 
   return (
