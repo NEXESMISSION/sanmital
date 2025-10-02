@@ -28,7 +28,7 @@ function Hero() {
       title: "EXPERTISE RECONNUE",
       subtitle: "35 ANS D'EXPÉRIENCE",
       description: "EN SIDÉRURGIE",
-      paragraph: "San Metal by Ben Amor, fondée en 1990, s'appuie sur 35 années d'expérience dans le domaine de la métallurgie."
+      paragraph: "San Metal by Ben Amor s'appuie sur 35 années d'expérience dans le domaine de la métallurgie."
     },
     {
       image: heroImage3,

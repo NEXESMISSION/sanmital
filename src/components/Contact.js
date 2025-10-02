@@ -203,11 +203,11 @@ export function Contact() {
           <div className="bg-white shadow-lg overflow-hidden">
             <div className="p-6 border-b border-gray-200">
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Notre localisation</h3>
-              <p className="text-gray-600">Route Mahdia Km 8, Sfax</p>
+              <p className="text-gray-600">PPWX+CFX STE SAN METAL By BEN AMOR, Sfax</p>
             </div>
             <div className="aspect-[4/3]">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.123456789!2d10.7421875!3d34.7354167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1301d0f1c9b5e2a3%3A0x1234567890abcdef!2sRoute%20Mahdia%20Km%208%2C%20Sfax%2C%20Tunisia!5e0!3m2!1sen!2s!4v1234567890123!5m2!1sen!2s"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.8!2d10.7484!3d34.7464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1301d3006e925ec5%3A0x9873d99edde1ae67!2sPPWX%2BCFX%20STE%20SAN%20METAL%20By%20BEN%20AMOR%2C%20Sfax!5e0!3m2!1sen!2stn!4v1234567890123!5m2!1sen!2stn"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -221,7 +221,7 @@ export function Contact() {
               <Button 
                 variant="outline" 
                 className="w-full border-red-700 text-red-700 hover:bg-red-50"
-                onClick={() => window.open('https://maps.app.goo.gl/WrwHx83MXkCpkkLD6', '_blank')}
+                onClick={() => window.open('https://www.google.com/maps?q=PPWX+CFX+STE+SAN+METAL+By+BEN+AMOR,+Sfax&ftid=0x1301d3006e925ec5:0x9873d99edde1ae67', '_blank')}
               >
                 <ExternalLink className="mr-2 h-4 w-4" />
                 Ouvrir dans Google Maps

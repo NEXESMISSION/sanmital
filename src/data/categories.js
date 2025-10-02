@@ -26,7 +26,7 @@ const categories = [
   {
     id: "panneaux_sandwich",
     title: "Panneaux Sandwich",
-    description: "SAN METAL BY BEN AMOR met à votre disposition les panneaux sandwich TUNISCO, une solution moderne, économique et performante pour l'isolation et la construction. Légers, robustes et faciles à poser, ils servent pour les toitures, façades, cloisons intérieures ou chambres froides. Leur structure, composée de deux parements métalliques enserrant un isolant, offre une excellente protection contre les variations climatiques et assure une longévité accrue aux bâtiments industriels, commerciaux ou agricoles.",
+    description: "SAN METAL BY BEN AMOR met à votre disposition les panneaux sandwich, une solution moderne, économique et performante pour l'isolation et la construction. Légers, robustes et faciles à poser, ils servent pour les toitures, façades, cloisons intérieures ou chambres froides. Leur structure, composée de deux parements métalliques enserrant un isolant, offre une excellente protection contre les variations climatiques et assure une longévité accrue aux bâtiments industriels, commerciaux ou agricoles.",
     image: "/assets/images/thumbnails/panneaux_sandwich/category.jpg"
   },
   {

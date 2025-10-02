@@ -1,5 +1,5 @@
 import React from 'react';
-import { Wrench, GraduationCap, CheckCircle, Settings, Users, Award } from 'lucide-react';
+import { Wrench, GraduationCap, CheckCircle, Settings, Users, Award, Scissors, Tool } from 'lucide-react';
 import { Card, CardContent } from '../components/ui/card';
 import Contact from '../components/Contact';
 
@@ -227,6 +227,104 @@ function ServicesPage() {
                 <p className="text-blue-900 text-sm">
                   <strong>Partenaire:</strong> IOTA CENTER - Centre de formation reconnu pour l'excellence de ses programmes
                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Service 3: Découpe et perçage */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+            {/* Content */}
+            <div>
+              <div className="flex items-center mb-6">
+                <div className="bg-orange-100 p-4 rounded-lg">
+                  <Scissors className="h-10 w-10 text-orange-600" />
+                </div>
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 ml-4">
+                  Découpe et perçage
+                </h2>
+              </div>
+              
+              <p className="text-gray-600 mb-6 text-lg leading-relaxed">
+                En plus de <strong className="text-gray-900">la fourniture de nos poutrelles</strong>, nous proposons également des 
+                <strong className="text-gray-900"> services de préfabrication à la demande de nos clients</strong>, en lui fournissant 
+                des multiples prestations et services conformément à ses exigences techniques et plans, entre autres, 
+                la <strong className="text-gray-900">découpe, le perçage, le poinçonnage, l'oxycoupage</strong> et 
+                l'<strong className="text-gray-900">assistance technique</strong> pour répondre aux besoins spécifiques de ses projets.
+              </p>
+              
+              <div className="space-y-4 mb-6">
+                <div className="flex items-start">
+                  <CheckCircle className="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-1" />
+                  <p className="text-gray-600">
+                    Découpe sur mesure selon vos spécifications techniques
+                  </p>
+                </div>
+                
+                <div className="flex items-start">
+                  <CheckCircle className="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-1" />
+                  <p className="text-gray-600">
+                    Perçage de précision adapté à vos besoins
+                  </p>
+                </div>
+                
+                <div className="flex items-start">
+                  <CheckCircle className="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-1" />
+                  <p className="text-gray-600">
+                    Poinçonnage professionnel pour tous types de profilés
+                  </p>
+                </div>
+                
+                <div className="flex items-start">
+                  <CheckCircle className="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-1" />
+                  <p className="text-gray-600">
+                    Oxycoupage pour les pièces de grande dimension
+                  </p>
+                </div>
+                
+                <div className="flex items-start">
+                  <CheckCircle className="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-1" />
+                  <p className="text-gray-600">
+                    Assistance technique pour la réalisation de vos plans
+                  </p>
+                </div>
+                
+                <div className="flex items-start">
+                  <CheckCircle className="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-1" />
+                  <p className="text-gray-600">
+                    Respect strict de vos exigences et délais de livraison
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Images */}
+            <div>
+              <div className="mb-8">
+                <img
+                  src="/6.jpg"
+                  alt="Découpe et perçage"
+                  className="rounded-lg shadow-xl w-full h-auto object-cover"
+                />
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="relative">
+                  <img
+                    src="/7.jpg"
+                    alt="Service de découpe"
+                    className="rounded-lg shadow-lg w-full h-48 object-cover"
+                  />
+                </div>
+                <div className="relative">
+                  <img
+                    src="/8.jpg"
+                    alt="Service de perçage"
+                    className="rounded-lg shadow-lg w-full h-48 object-cover"
+                  />
+                </div>
               </div>
             </div>
           </div>
