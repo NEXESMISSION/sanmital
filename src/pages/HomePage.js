@@ -224,7 +224,7 @@ function ProductsSection() {
     { id: 'fer_marchands', title: 'Fer marchands' },
     { id: 'accessoires_charpente', title: 'Accessoires Charpente' },
     { id: 'aciers_speciaux', title: 'Aciers Spéciaux' },
-    { id: 'ossature_metallique', title: 'Profilés galvanisé pour placo platre' }
+    { id: 'ossature_metallique', title: 'Ossature métallique' }
   ];
 
   return (
