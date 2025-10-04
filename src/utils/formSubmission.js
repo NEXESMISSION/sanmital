@@ -166,6 +166,10 @@ export const validateFormData = (formData) => {
     errors.phone = "Le téléphone est requis";
   }
   
+  if (!formData.customerType || formData.customerType.trim() === '') {
+    errors.customerType = "Le type est requis";
+  }
+  
   if (!formData.message || formData.message.trim() === '') {
     errors.message = "Le message est requis";
   }

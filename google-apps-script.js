@@ -68,7 +68,7 @@ function storeData(data) {
       sheet = spreadsheet.insertSheet(SHEET_NAME);
     }
     
-    const headers = ['Timestamp', 'Name', 'Company', 'Email', 'Phone', 'Message', 'Source'];
+    const headers = ['Timestamp', 'Name', 'Company', 'Email', 'Phone', 'CustomerType', 'Message', 'Source'];
     
     // If the sheet is empty, add the headers.
     if (sheet.getLastRow() < 1) {
@@ -109,6 +109,7 @@ function testSheetSetup() {
     company: "Test Corp",
     email: "test@example.com",
     phone: "123456789",
+    customerType: "Client",
     message: "This is a test run directly from the script editor.",
     source: "manual_test"
   };

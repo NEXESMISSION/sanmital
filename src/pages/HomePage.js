@@ -26,7 +26,7 @@ function Hero() {
     {
       image: heroImage2,
       title: "EXPERTISE RECONNUE",
-      subtitle: "35 ANS D'EXPÉRIENCE",
+      subtitle: "35 ans d'expérience",
       description: "EN SIDÉRURGIE",
       paragraph: "San Metal by Ben Amor s'appuie sur 35 années d'expérience dans le domaine de la métallurgie."
     },

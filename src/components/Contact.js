@@ -10,6 +10,7 @@ export function Contact() {
     company: "",
     email: "",
     phone: "",
+    customerType: "",
     message: ""
   });
   
@@ -79,6 +80,7 @@ export function Contact() {
           company: "",
           email: "",
           phone: "",
+          customerType: "",
           message: ""
         });
         
@@ -277,6 +279,24 @@ export function Contact() {
                   value={formData.company}
                   onChange={handleChange}
                 />
+              </div>
+
+              <div className="space-y-2">
+                <label htmlFor="customerType" className="block text-sm font-medium text-gray-700">Type *</label>
+                <select 
+                  id="customerType"
+                  className={`w-full px-4 py-2 border ${formErrors.customerType ? 'border-red-500' : 'border-gray-300'} focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent`}
+                  value={formData.customerType}
+                  onChange={handleChange}
+                >
+                  <option value="">Sélectionnez votre type</option>
+                  <option value="Prevendeur">Prevendeur</option>
+                  <option value="Client">Client</option>
+                  <option value="Distributeur">Distributeur</option>
+                </select>
+                {formErrors.customerType && (
+                  <p className="text-red-500 text-xs mt-1">{formErrors.customerType}</p>
+                )}
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
