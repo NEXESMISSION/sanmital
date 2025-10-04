@@ -233,7 +233,7 @@ export function Contact() {
         </div>
 
         {/* Contact Form */}
-        <div className="mt-12 mb-12">
+        <div id="contact-form" className="mt-12 mb-12">
           <div className="bg-white shadow-lg p-8">
             <h3 className="text-2xl font-bold mb-6 text-center text-gray-900">Envoyez-nous un message</h3>
             
