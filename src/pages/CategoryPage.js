@@ -5,6 +5,8 @@ import { getCategory } from '../data/categories';
 import { getProductsByCategory } from '../data/products';
 import { Button } from '../components/ui/button';
 import OptimizedImage from '../components/ui/OptimizedImage';
+import SEO from '../components/SEO/SEO';
+import { breadcrumbSchema } from '../components/SEO/structuredData';
 
 function CategoryPage() {
   const { categoryId } = useParams();
@@ -34,6 +36,13 @@ function CategoryPage() {
     fetchCategoryAndProducts();
   }, [categoryId]);
 
+  // SEO data
+  const breadcrumbs = category ? breadcrumbSchema([
+    { name: 'Accueil', url: '/' },
+    { name: 'Catégories', url: '/#categories' },
+    { name: category.title, url: `/category/${categoryId}` }
+  ]) : null;
+
   if (loading) {
     return (
       <div className="pt-24 pb-20 text-center">
@@ -45,7 +54,13 @@ function CategoryPage() {
 
   if (!category) {
     return (
-      <div className="pt-24 pb-20 text-center">
+      <>
+        <SEO 
+          title="Catégorie non trouvée | San Metal by Ben Amor"
+          description="La catégorie demandée n'existe pas. Découvrez notre gamme complète de produits métallurgiques."
+          canonical={`/category/${categoryId}`}
+        />
+        <div className="pt-24 pb-20 text-center">
         <h2 className="text-2xl font-bold text-gray-800">Catégorie non trouvée</h2>
         <p className="mt-4 text-gray-600">
           Nous n'avons pas trouvé la catégorie que vous recherchez.
@@ -56,22 +71,30 @@ function CategoryPage() {
           </Button>
         </Link>
       </div>
-    );
+    </>);
   }
 
   return (
-    <div className="mt-[120px] sm:mt-[130px] md:mt-[140px] lg:mt-[140px] bg-gray-100 min-h-screen">
-      <div className="container mx-auto max-w-7xl px-4">
-        {/* Première boîte pour la description et le titre */}
-        <div className="bg-white shadow-lg p-8 md:p-12 mb-8 mt-8">
-          {/* Navigation */}
-          <nav className="text-sm text-gray-500 mb-2">
-            <Link to="/" className="hover:scale-105 rounded-none">Accueil</Link>
-            <span className="mx-1">&gt;</span>
-            <Link to="/#products" className="hover:scale-105 rounded-none">Produits</Link>
-            <span className="mx-1">&gt;</span>
-            <span>{category.title}</span>
-          </nav>
+    <>
+      <SEO 
+        title={`${category.title} | San Metal by Ben Amor`}
+        description={category.description || `Découvrez notre gamme complète de ${category.title.toLowerCase()} chez San Metal by Ben Amor. Produits métallurgiques de qualité supérieure pour tous vos projets de construction et industrie en Tunisie.`}
+        keywords={`${category.title}, ${category.title} Tunisie, achat ${category.title.toLowerCase()}, fournisseur ${category.title.toLowerCase()}, ${category.title} Sfax`}
+        canonical={`/category/${categoryId}`}
+        structuredData={breadcrumbs}
+      />
+      <div className="mt-[120px] sm:mt-[130px] md:mt-[140px] lg:mt-[140px] bg-gray-100 min-h-screen">
+        <div className="container mx-auto max-w-7xl px-4">
+          {/* Première boîte pour la description et le titre */}
+          <div className="bg-white shadow-lg p-8 md:p-12 mb-8 mt-8">
+            {/* Navigation */}
+            <nav className="text-sm text-gray-500 mb-2">
+              <Link to="/" className="hover:scale-105 rounded-none">Accueil</Link>
+              <span className="mx-1">&gt;</span>
+              <Link to="/#products" className="hover:scale-105 rounded-none">Produits</Link>
+              <span className="mx-1">&gt;</span>
+              <span>{category.title}</span>
+            </nav>
 
           <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">{category.title}</h1>
           <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
@@ -110,7 +133,8 @@ function CategoryPage() {
           )}
         </div>
       </div>
-    </div>
+      </div>
+    </>
   );
 }
 

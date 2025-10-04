@@ -6,6 +6,8 @@ import { Button } from '../components/ui/button';
 import products, { getProductsByCategory } from '../data/products';
 import Contact from '../components/Contact';
 import OptimizedImage from '../components/ui/OptimizedImage';
+import SEO from '../components/SEO/SEO';
+import { organizationSchema, localBusinessSchema, websiteSchema } from '../components/SEO/structuredData';
 
 function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -605,8 +607,21 @@ function ContactSection() {
 // CtaSection has been moved into ProductsSection
 
 function HomePage() {
+  // Combined structured data for homepage
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [organizationSchema, localBusinessSchema, websiteSchema]
+  };
+
   return (
     <>
+      <SEO 
+        title="San Metal by Ben Amor | Fournisseur de référence en aciers et métaux en Tunisie"
+        description="Depuis 35 ans, San Metal by Ben Amor est votre fournisseur de référence en aciers et métaux en Tunisie. Découvrez notre large gamme de produits métallurgiques de qualité supérieure : poutrelles, tôles, tubes, cornières, charpente et bien plus."
+        keywords="fournisseur acier Tunisie, métaux Sfax, poutrelles, tôles métalliques, tubes acier, cornières, charpente métallique, construction métallique"
+        canonical="/"
+        structuredData={structuredData}
+      />
       <Hero />
       <ProductsSection />
       <ProcessSection />

@@ -2,10 +2,47 @@ import React from 'react';
 import { Wrench, GraduationCap, CheckCircle, Settings, Users, Award, Scissors, Tool } from 'lucide-react';
 import { Card, CardContent } from '../components/ui/card';
 import Contact from '../components/Contact';
+import SEO from '../components/SEO/SEO';
+import { serviceSchema, breadcrumbSchema } from '../components/SEO/structuredData';
 
 function ServicesPage() {
+  const services = [
+    serviceSchema({
+      name: "Réparation Machine et Poste Soudure",
+      description: "Service complet de réparation et maintenance pour tous types de machines et postes de soudure : TIG, MIG/MAG, plasma. Diagnostics, réparations de cartes électroniques, calibration, et maintenance préventive.",
+      type: "RepairService"
+    }),
+    serviceSchema({
+      name: "Formation Professionnelle en Métallurgie",
+      description: "Formations spécialisées en partenariat avec IOTA CENTER : usinage CNC, soudage, contrôle qualité, et CAO/DAO. Programmes certifiants pour développer les compétences techniques.",
+      type: "EducationalService"
+    }),
+    serviceSchema({
+      name: "Découpe et Perçage Métallique",
+      description: "Services de préfabrication métallique : découpe de précision, perçage, poinçonnage, oxycoupage, et assistance technique pour vos projets de construction.",
+      type: "Service"
+    })
+  ];
+
+  const breadcrumbs = breadcrumbSchema([
+    { name: 'Accueil', url: '/' },
+    { name: 'Services', url: '/services' }
+  ]);
+
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [...services, breadcrumbs]
+  };
+
   return (
     <div className="mt-[120px] sm:mt-[130px] md:mt-[140px] lg:mt-[140px]">
+      <SEO 
+        title="Services San Metal | Réparation Soudure, Formation & Découpe Métallique"
+        description="San Metal by Ben Amor offre des services de réparation de machines et postes de soudure, formations professionnelles en métallurgie (CNC, soudage, CAO/DAO), et services de découpe et perçage métallique en Tunisie."
+        keywords="réparation poste soudure, formation soudage Tunisie, découpe métallique, perçage acier, maintenance soudure, formation CNC, IOTA CENTER"
+        canonical="/services"
+        structuredData={structuredData}
+      />
       {/* Hero Section */}
       <section className="py-16 bg-gradient-to-r from-red-600 to-red-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

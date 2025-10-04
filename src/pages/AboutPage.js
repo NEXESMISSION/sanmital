@@ -3,10 +3,24 @@ import { Building2, Users, Target, Truck, Phone } from 'lucide-react';
 import { Card, CardContent } from '../components/ui/card';
 import { Button } from '../components/ui/button';
 import Contact from '../components/Contact';
+import SEO from '../components/SEO/SEO';
+import { breadcrumbSchema } from '../components/SEO/structuredData';
 
 function AboutPage() {
+  const breadcrumbs = breadcrumbSchema([
+    { name: 'Accueil', url: '/' },
+    { name: 'À Propos', url: '/about' }
+  ]);
+
   return (
     <div className="mt-[120px] sm:mt-[130px] md:mt-[140px] lg:mt-[140px]">
+      <SEO 
+        title="À Propos de San Metal by Ben Amor | 35 ans d'expertise en métallurgie"
+        description="Découvrez l'histoire de San Metal by Ben Amor, entreprise familiale fondée en 1990 à Sfax. 35 années d'expertise dans la fourniture de produits métallurgiques de qualité supérieure en Tunisie."
+        keywords="San Metal histoire, entreprise métallurgie Tunisie, fournisseur acier Sfax, expertise métallurgique, Ben Amor, entreprise familiale"
+        canonical="/about"
+        structuredData={breadcrumbs}
+      />
 
       {/* Main About Section */}
       <section id="about" className="py-20 bg-white">

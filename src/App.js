@@ -5,6 +5,7 @@ import AboutPage from './pages/AboutPage';
 import ProductPage from './pages/ProductPage';
 import CategoryPage from './pages/CategoryPage';
 import ServicesPage from './pages/ServicesPage';
+import NotFoundPage from './pages/NotFoundPage';
 import Layout from './components/layout/Layout';
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
         <Route path="services" element={<ServicesPage />} />
         <Route path="category/:categoryId" element={<CategoryPage />} />
         <Route path="products/:productId" element={<ProductPage />} />
-        <Route path="*" element={<div className="pt-[120px] sm:pt-[130px] md:pt-[140px] lg:pt-[140px] pb-20 text-center">Page not found</div>} />
+        <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>
   );

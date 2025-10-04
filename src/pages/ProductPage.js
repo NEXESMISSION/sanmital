@@ -6,6 +6,8 @@ import { Button } from '../components/ui/button';
 import { getProduct, getProductsByCategory, getAllProducts } from '../data/products';
 import OptimizedImage from '../components/ui/OptimizedImage';
 import SpecImage from '../components/ui/SpecImage';
+import SEO from '../components/SEO/SEO';
+import { productSchema, breadcrumbSchema } from '../components/SEO/structuredData';
 
 function ProductPage() {
   const { productId } = useParams();
@@ -53,6 +55,25 @@ function ProductPage() {
     fetchProduct();
   }, [productId, navigate]);
 
+  // SEO Data
+  const productStructuredData = product ? productSchema({
+    name: product.title,
+    image: product.image,
+    description: product.description || `${product.title} - Produit métallurgique de qualité supérieure disponible chez San Metal by Ben Amor`,
+    price: product.price
+  }) : null;
+
+  const breadcrumbs = product ? breadcrumbSchema([
+    { name: 'Accueil', url: '/' },
+    { name: 'Produits', url: '/#products' },
+    { name: product.title, url: `/products/${productId}` }
+  ]) : null;
+
+  const structuredData = product ? {
+    "@context": "https://schema.org",
+    "@graph": [productStructuredData, breadcrumbs]
+  } : null;
+
   if (loading) {
     return (
       <div className="pt-[120px] sm:pt-[130px] md:pt-[140px] lg:pt-[140px] pb-20 text-center">
@@ -64,7 +85,13 @@ function ProductPage() {
 
   if (!product) {
     return (
-      <div className="pt-[120px] sm:pt-[130px] md:pt-[140px] lg:pt-[140px] pb-20 text-center">
+      <>
+        <SEO 
+          title="Produit non trouvé | San Metal by Ben Amor"
+          description="Le produit demandé n'existe pas. Découvrez notre gamme complète de produits métallurgiques."
+          canonical={`/products/${productId}`}
+        />
+        <div className="pt-[120px] sm:pt-[130px] md:pt-[140px] lg:pt-[140px] pb-20 text-center">
         <h2 className="text-2xl font-bold text-gray-800">Produit non trouvé</h2>
         <p className="mt-4 text-gray-600">
           Nous n'avons pas trouvé le produit que vous recherchez.
@@ -74,12 +101,22 @@ function ProductPage() {
             Retour à l'accueil
           </Button>
         </Link>
-      </div>
+        </div>
+      </>
     );
   }
 
   return (
-    <div className="pt-[120px] sm:pt-[130px] md:pt-[140px] lg:pt-[140px]">
+    <>
+      <SEO 
+        title={`${product.title} | San Metal by Ben Amor`}
+        description={product.description || `Découvrez ${product.title} chez San Metal by Ben Amor. Produit métallurgique de qualité supérieure pour vos projets de construction et industrie en Tunisie. Livraison disponible à Sfax et dans toute la Tunisie.`}
+        keywords={`${product.title}, ${product.title} Tunisie, achat ${product.title}, prix ${product.title}, ${product.title} Sfax`}
+        canonical={`/products/${productId}`}
+        ogImage={product.image}
+        structuredData={structuredData}
+      />
+      <div className="pt-[120px] sm:pt-[130px] md:pt-[140px] lg:pt-[140px]">
       {/* Breadcrumb */}
       <div className="bg-gray-100 py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -268,7 +305,8 @@ function ProductPage() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 }
 
