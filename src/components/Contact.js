@@ -178,6 +178,7 @@ export function Contact() {
                 </div>
               </div>
               <div className="pl-16">
+                <p className="text-gray-700">Sfax, Route Lafrane</p>
                 <p className="text-gray-700">Route Mahdia Km 8</p>
                 <p className="text-gray-700">Sfax - Tunisie</p>
               </div>

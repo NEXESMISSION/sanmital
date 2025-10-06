@@ -37,7 +37,7 @@ function Footer({ isAboutPage }) {
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="h-5 w-5 text-red-600" />
-                <span className="text-gray-300">Route Mahdia Km 8, Sfax - Tunisie</span>
+                <span className="text-gray-300">Sfax, Route Lafrane - Route Mahdia Km 8, Tunisie</span>
               </div>
             </div>
           </div>
