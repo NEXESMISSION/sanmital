@@ -141,6 +141,14 @@ export function Contact() {
                 <a href="tel:+21674830899" className="block text-gray-700 hover:text-red-700 transition-colors">
                   (+216) 74 830 899
                 </a>
+                <div className="flex items-center gap-2">
+                  <a href="tel:+21636110258" className="text-gray-700 hover:text-red-700 transition-colors">
+                    (+216) 36 11 02 58
+                  </a>
+                  <span className="bg-red-100 text-red-700 text-xs font-semibold px-2 py-1 rounded">
+                    Fixe
+                  </span>
+                </div>
               </div>
             </div>
 
