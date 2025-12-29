@@ -242,7 +242,7 @@ function ProductPage() {
                 <div className="space-y-6">
                   <div>
                     <h4 className="font-semibold mb-2">Contact commercial</h4>
-                    <p className="text-gray-600 mb-2">(+216) 74 830 899</p>
+                    <p className="text-gray-600 mb-2">(+216) 36 11 02 58</p>
                     <p className="text-gray-600">Contact@sanmetal.com.tn</p>
                   </div>
                   

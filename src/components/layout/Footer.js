@@ -29,7 +29,7 @@ function Footer({ isAboutPage }) {
             <div className="space-y-2">
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-red-600" />
-                <span className="text-gray-300">(+216) 74 830 899</span>
+                <span className="text-gray-300">(+216) 36 11 02 58</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-red-600" />
