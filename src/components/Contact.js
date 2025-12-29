@@ -138,9 +138,6 @@ export function Contact() {
                 <a href="tel:+21696607065" className="block text-gray-700 hover:text-red-700 transition-colors">
                   (+216) 96 607 065
                 </a>
-                <a href="tel:+21674830899" className="block text-gray-700 hover:text-red-700 transition-colors">
-                  (+216) 74 830 899
-                </a>
                 <div className="flex items-center gap-2">
                   <a href="tel:+21636110258" className="text-gray-700 hover:text-red-700 transition-colors">
                     (+216) 36 11 02 58
